@@ -1,0 +1,1032 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local GUI = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Top = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local ImageButton = Instance.new("ImageButton")
+local Sections = Instance.new("Frame")
+local Animations = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local HatScripts = Instance.new("Frame")
+local TextButton_2 = Instance.new("TextButton")
+local Utility = Instance.new("Frame")
+local TextButton_3 = Instance.new("TextButton")
+local Settings = Instance.new("Frame")
+local TextButton_4 = Instance.new("TextButton")
+local Status = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Scripts = Instance.new("Folder")
+local ExploitScripts = Instance.new("Folder")
+local Animations_2 = Instance.new("Frame")
+local Neko = Instance.new("TextButton")
+local TextButton_Roundify_8px = Instance.new("ImageLabel")
+local Chill = Instance.new("TextButton")
+local TextButton_Roundify_8px_2 = Instance.new("ImageLabel")
+local NetlessNotApplied = Instance.new("ImageLabel")
+local NamelessAnimationsV4 = Instance.new("TextButton")
+local TextButton_Roundify_8px_3 = Instance.new("ImageLabel")
+local HatScripts_2 = Instance.new("Frame")
+local Hathub = Instance.new("TextButton")
+local TextButton_Roundify_8px_4 = Instance.new("ImageLabel")
+local Utility_2 = Instance.new("Frame")
+local SimpleSpy = Instance.new("TextButton")
+local TextButton_Roundify_8px_5 = Instance.new("ImageLabel")
+local MouseFling = Instance.new("TextButton")
+local TextButton_Roundify_8px_6 = Instance.new("ImageLabel")
+local InfiniteYield = Instance.new("TextButton")
+local TextButton_Roundify_8px_7 = Instance.new("ImageLabel")
+local CMDX = Instance.new("TextButton")
+local TextButton_Roundify_8px_8 = Instance.new("ImageLabel")
+
+--Properties:
+
+GUI.Name = "GUI"
+GUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Main.Name = "Main"
+Main.Parent = GUI
+Main.AnchorPoint = Vector2.new(0.5, 0.5)
+Main.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Main.BackgroundTransparency = 0.200
+Main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderSizePixel = 2
+Main.Position = UDim2.new(0.5, 0, 0.56036216, 0)
+Main.Size = UDim2.new(0, 300, 0, 194)
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.AnchorPoint = Vector2.new(0.5, 0.5)
+Top.BackgroundColor3 = Color3.fromRGB(97, 97, 97)
+Top.BorderSizePixel = 0
+Top.Position = UDim2.new(0.5, 0, 0.0585471615, 0)
+Top.Size = UDim2.new(0, 300, 0, 23)
+
+Title.Name = "Title"
+Title.Parent = Top
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0199999996, 0, 0, 0)
+Title.Size = UDim2.new(0, 200, 0, 23)
+Title.Font = Enum.Font.Cartoon
+Title.Text = "untitled script hub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 14.000
+Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageButton.Parent = Top
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.920000017, 0, 0.0869565234, 0)
+ImageButton.Size = UDim2.new(0, 18, 0, 18)
+ImageButton.Image = "http://www.roblox.com/asset/?id=645779217"
+
+Sections.Name = "Sections"
+Sections.Parent = Main
+Sections.AnchorPoint = Vector2.new(0.5, 0.5)
+Sections.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Sections.BackgroundTransparency = 1.000
+Sections.BorderSizePixel = 0
+Sections.Position = UDim2.new(0.5, 0, 0.153908014, 0)
+Sections.Size = UDim2.new(0, 300, 0, 14)
+
+Animations.Name = "Animations"
+Animations.Parent = Sections
+Animations.AnchorPoint = Vector2.new(0.5, 0.5)
+Animations.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Animations.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Animations.Position = UDim2.new(0.125, 0, 0.439622313, 0)
+Animations.Size = UDim2.new(0, 75, 0, 14)
+Animations.ZIndex = 0
+
+TextButton.Parent = Animations
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Size = UDim2.new(0, 75, 0, 14)
+TextButton.Font = Enum.Font.Cartoon
+TextButton.Text = "fe animations"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.TextYAlignment = Enum.TextYAlignment.Bottom
+
+HatScripts.Name = "Hat Scripts"
+HatScripts.Parent = Sections
+HatScripts.AnchorPoint = Vector2.new(0.5, 0.5)
+HatScripts.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+HatScripts.BorderColor3 = Color3.fromRGB(255, 255, 255)
+HatScripts.Position = UDim2.new(0.375, 0, 0.439622313, 0)
+HatScripts.Size = UDim2.new(0, 75, 0, 14)
+HatScripts.ZIndex = 0
+
+TextButton_2.Parent = HatScripts
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.Size = UDim2.new(0, 75, 0, 14)
+TextButton_2.Font = Enum.Font.Cartoon
+TextButton_2.Text = "fe hats"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+TextButton_2.TextYAlignment = Enum.TextYAlignment.Bottom
+
+Utility.Name = "Utility"
+Utility.Parent = Sections
+Utility.AnchorPoint = Vector2.new(0.5, 0.5)
+Utility.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Utility.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Utility.Position = UDim2.new(0.625, 0, 0.439622313, 0)
+Utility.Size = UDim2.new(0, 75, 0, 14)
+Utility.ZIndex = 0
+
+TextButton_3.Parent = Utility
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BackgroundTransparency = 1.000
+TextButton_3.Position = UDim2.new(0, 0, 7.4505806e-09, 0)
+TextButton_3.Size = UDim2.new(0, 75, 0, 14)
+TextButton_3.Font = Enum.Font.Cartoon
+TextButton_3.Text = "utility"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+TextButton_3.TextYAlignment = Enum.TextYAlignment.Bottom
+
+Settings.Name = "Settings"
+Settings.Parent = Sections
+Settings.AnchorPoint = Vector2.new(0.5, 0.5)
+Settings.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Settings.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Settings.Position = UDim2.new(0.875, 0, 0.439622313, 0)
+Settings.Size = UDim2.new(0, 75, 0, 14)
+Settings.ZIndex = 0
+
+TextButton_4.Parent = Settings
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.BackgroundTransparency = 1.000
+TextButton_4.Size = UDim2.new(0, 75, 0, 14)
+TextButton_4.Font = Enum.Font.Cartoon
+TextButton_4.Text = "settings/credits"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+TextButton_4.TextYAlignment = Enum.TextYAlignment.Bottom
+
+Status.Name = "Status"
+Status.Parent = Main
+Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Status.BackgroundTransparency = 1.000
+Status.Position = UDim2.new(0, 0, 0.185567006, 0)
+Status.Size = UDim2.new(0, 300, 0, 158)
+
+TextLabel.Parent = Status
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 0.898734152, 0)
+TextLabel.Size = UDim2.new(0, 300, 0, 16)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "nil"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Main
+
+ExploitScripts.Name = "ExploitScripts"
+ExploitScripts.Parent = Main
+
+Animations_2.Name = "Animations"
+Animations_2.Parent = ExploitScripts
+Animations_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Animations_2.BackgroundTransparency = 1.000
+Animations_2.Position = UDim2.new(0, 0, 0.185567006, 0)
+Animations_2.Size = UDim2.new(0, 300, 0, 158)
+Animations_2.Visible = false
+
+Neko.Name = "Neko"
+Neko.Parent = Animations_2
+Neko.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Neko.BackgroundTransparency = 1.000
+Neko.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Neko.BorderSizePixel = 0
+Neko.Position = UDim2.new(0.0199999996, 0, 0.131266743, 0)
+Neko.Size = UDim2.new(0, 88, 0, 20)
+Neko.ZIndex = 3
+Neko.Font = Enum.Font.Cartoon
+Neko.Text = "neko"
+Neko.TextColor3 = Color3.fromRGB(255, 255, 255)
+Neko.TextSize = 14.000
+
+TextButton_Roundify_8px.Name = "TextButton_Roundify_8px"
+TextButton_Roundify_8px.Parent = Neko
+TextButton_Roundify_8px.Active = true
+TextButton_Roundify_8px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_8px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_8px.BackgroundTransparency = 1.000
+TextButton_Roundify_8px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_8px.Selectable = true
+TextButton_Roundify_8px.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_8px.Image = "rbxassetid://3570695787"
+TextButton_Roundify_8px.ImageColor3 = Color3.fromRGB(61, 61, 61)
+TextButton_Roundify_8px.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_8px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_8px.SliceScale = 0.667
+
+Chill.Name = "Chill"
+Chill.Parent = Animations_2
+Chill.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Chill.BackgroundTransparency = 1.000
+Chill.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Chill.BorderSizePixel = 0
+Chill.Position = UDim2.new(0.0199999996, 0, 0.322249323, 0)
+Chill.Size = UDim2.new(0, 88, 0, 20)
+Chill.ZIndex = 3
+Chill.Font = Enum.Font.Cartoon
+Chill.Text = "chill"
+Chill.TextColor3 = Color3.fromRGB(255, 255, 255)
+Chill.TextSize = 14.000
+
+TextButton_Roundify_8px_2.Name = "TextButton_Roundify_8px"
+TextButton_Roundify_8px_2.Parent = Chill
+TextButton_Roundify_8px_2.Active = true
+TextButton_Roundify_8px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_8px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_8px_2.BackgroundTransparency = 1.000
+TextButton_Roundify_8px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_8px_2.Selectable = true
+TextButton_Roundify_8px_2.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_8px_2.Image = "rbxassetid://3570695787"
+TextButton_Roundify_8px_2.ImageColor3 = Color3.fromRGB(61, 61, 61)
+TextButton_Roundify_8px_2.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_8px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_8px_2.SliceScale = 0.667
+
+NetlessNotApplied.Name = "NetlessNotApplied"
+NetlessNotApplied.Parent = Animations_2
+NetlessNotApplied.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NetlessNotApplied.Size = UDim2.new(0, 100, 0, 100)
+NetlessNotApplied.Visible = false
+NetlessNotApplied.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+NamelessAnimationsV4.Name = "NamelessAnimationsV4"
+NamelessAnimationsV4.Parent = Animations_2
+NamelessAnimationsV4.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+NamelessAnimationsV4.BackgroundTransparency = 1.000
+NamelessAnimationsV4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+NamelessAnimationsV4.BorderSizePixel = 0
+NamelessAnimationsV4.Position = UDim2.new(0.0199999809, 0, 0.505793691, 0)
+NamelessAnimationsV4.Size = UDim2.new(0, 88, 0, 20)
+NamelessAnimationsV4.ZIndex = 3
+NamelessAnimationsV4.Font = Enum.Font.Cartoon
+NamelessAnimationsV4.Text = "nameless animations"
+NamelessAnimationsV4.TextColor3 = Color3.fromRGB(255, 255, 255)
+NamelessAnimationsV4.TextScaled = true
+NamelessAnimationsV4.TextSize = 14.000
+NamelessAnimationsV4.TextWrapped = true
+
+TextButton_Roundify_8px_3.Name = "TextButton_Roundify_8px"
+TextButton_Roundify_8px_3.Parent = NamelessAnimationsV4
+TextButton_Roundify_8px_3.Active = true
+TextButton_Roundify_8px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_8px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_8px_3.BackgroundTransparency = 1.000
+TextButton_Roundify_8px_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_8px_3.Selectable = true
+TextButton_Roundify_8px_3.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_8px_3.Image = "rbxassetid://3570695787"
+TextButton_Roundify_8px_3.ImageColor3 = Color3.fromRGB(61, 61, 61)
+TextButton_Roundify_8px_3.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_8px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_8px_3.SliceScale = 0.667
+
+HatScripts_2.Name = "Hat Scripts"
+HatScripts_2.Parent = ExploitScripts
+HatScripts_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HatScripts_2.BackgroundTransparency = 1.000
+HatScripts_2.Position = UDim2.new(0, 0, 0.185567006, 0)
+HatScripts_2.Size = UDim2.new(0, 300, 0, 158)
+HatScripts_2.Visible = false
+
+Hathub.Name = "Hathub"
+Hathub.Parent = HatScripts_2
+Hathub.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Hathub.BackgroundTransparency = 1.000
+Hathub.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Hathub.BorderSizePixel = 0
+Hathub.Position = UDim2.new(0.0199999996, 0, 0.131266713, 0)
+Hathub.Size = UDim2.new(0, 88, 0, 20)
+Hathub.ZIndex = 3
+Hathub.Font = Enum.Font.Cartoon
+Hathub.Text = "hathub v1"
+Hathub.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hathub.TextSize = 14.000
+
+TextButton_Roundify_8px_4.Name = "TextButton_Roundify_8px"
+TextButton_Roundify_8px_4.Parent = Hathub
+TextButton_Roundify_8px_4.Active = true
+TextButton_Roundify_8px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_8px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_8px_4.BackgroundTransparency = 1.000
+TextButton_Roundify_8px_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_8px_4.Selectable = true
+TextButton_Roundify_8px_4.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_8px_4.Image = "rbxassetid://3570695787"
+TextButton_Roundify_8px_4.ImageColor3 = Color3.fromRGB(61, 61, 61)
+TextButton_Roundify_8px_4.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_8px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_8px_4.SliceScale = 0.667
+
+Utility_2.Name = "Utility"
+Utility_2.Parent = ExploitScripts
+Utility_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Utility_2.BackgroundTransparency = 1.000
+Utility_2.Position = UDim2.new(0, 0, 0.185567006, 0)
+Utility_2.Size = UDim2.new(0, 300, 0, 158)
+Utility_2.Visible = false
+
+SimpleSpy.Name = "SimpleSpy"
+SimpleSpy.Parent = Utility_2
+SimpleSpy.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+SimpleSpy.BackgroundTransparency = 1.000
+SimpleSpy.BorderColor3 = Color3.fromRGB(255, 255, 255)
+SimpleSpy.BorderSizePixel = 0
+SimpleSpy.Position = UDim2.new(0.0199999996, 0, 0.129765987, 0)
+SimpleSpy.Size = UDim2.new(0, 88, 0, 20)
+SimpleSpy.ZIndex = 3
+SimpleSpy.Font = Enum.Font.Cartoon
+SimpleSpy.Text = "simple spy"
+SimpleSpy.TextColor3 = Color3.fromRGB(255, 255, 255)
+SimpleSpy.TextSize = 14.000
+
+TextButton_Roundify_8px_5.Name = "TextButton_Roundify_8px"
+TextButton_Roundify_8px_5.Parent = SimpleSpy
+TextButton_Roundify_8px_5.Active = true
+TextButton_Roundify_8px_5.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_8px_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_8px_5.BackgroundTransparency = 1.000
+TextButton_Roundify_8px_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_8px_5.Selectable = true
+TextButton_Roundify_8px_5.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_8px_5.Image = "rbxassetid://3570695787"
+TextButton_Roundify_8px_5.ImageColor3 = Color3.fromRGB(61, 61, 61)
+TextButton_Roundify_8px_5.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_8px_5.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_8px_5.SliceScale = 0.667
+
+MouseFling.Name = "MouseFling"
+MouseFling.Parent = Utility_2
+MouseFling.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+MouseFling.BackgroundTransparency = 1.000
+MouseFling.BorderColor3 = Color3.fromRGB(255, 255, 255)
+MouseFling.BorderSizePixel = 0
+MouseFling.Position = UDim2.new(0.0199999996, 0, 0.316964269, 0)
+MouseFling.Size = UDim2.new(0, 88, 0, 20)
+MouseFling.ZIndex = 3
+MouseFling.Font = Enum.Font.Cartoon
+MouseFling.Text = "mouse fling"
+MouseFling.TextColor3 = Color3.fromRGB(255, 255, 255)
+MouseFling.TextSize = 14.000
+
+TextButton_Roundify_8px_6.Name = "TextButton_Roundify_8px"
+TextButton_Roundify_8px_6.Parent = MouseFling
+TextButton_Roundify_8px_6.Active = true
+TextButton_Roundify_8px_6.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_8px_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_8px_6.BackgroundTransparency = 1.000
+TextButton_Roundify_8px_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_8px_6.Selectable = true
+TextButton_Roundify_8px_6.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_8px_6.Image = "rbxassetid://3570695787"
+TextButton_Roundify_8px_6.ImageColor3 = Color3.fromRGB(61, 61, 61)
+TextButton_Roundify_8px_6.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_8px_6.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_8px_6.SliceScale = 0.667
+
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = Utility_2
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+InfiniteYield.BackgroundTransparency = 1.000
+InfiniteYield.BorderColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.BorderSizePixel = 0
+InfiniteYield.Position = UDim2.new(0.0199999996, 0, 0.515841961, 0)
+InfiniteYield.Size = UDim2.new(0, 88, 0, 20)
+InfiniteYield.ZIndex = 3
+InfiniteYield.Font = Enum.Font.Cartoon
+InfiniteYield.Text = "infinite yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.TextSize = 14.000
+
+TextButton_Roundify_8px_7.Name = "TextButton_Roundify_8px"
+TextButton_Roundify_8px_7.Parent = InfiniteYield
+TextButton_Roundify_8px_7.Active = true
+TextButton_Roundify_8px_7.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_8px_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_8px_7.BackgroundTransparency = 1.000
+TextButton_Roundify_8px_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_8px_7.Selectable = true
+TextButton_Roundify_8px_7.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_8px_7.Image = "rbxassetid://3570695787"
+TextButton_Roundify_8px_7.ImageColor3 = Color3.fromRGB(61, 61, 61)
+TextButton_Roundify_8px_7.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_8px_7.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_8px_7.SliceScale = 0.667
+
+CMDX.Name = "CMD-X"
+CMDX.Parent = Utility_2
+CMDX.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+CMDX.BackgroundTransparency = 1.000
+CMDX.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CMDX.BorderSizePixel = 0
+CMDX.Position = UDim2.new(0.0199999996, 0, 0.712044418, 0)
+CMDX.Size = UDim2.new(0, 88, 0, 20)
+CMDX.ZIndex = 3
+CMDX.Font = Enum.Font.Cartoon
+CMDX.Text = "cmd-x"
+CMDX.TextColor3 = Color3.fromRGB(255, 255, 255)
+CMDX.TextSize = 14.000
+
+TextButton_Roundify_8px_8.Name = "TextButton_Roundify_8px"
+TextButton_Roundify_8px_8.Parent = CMDX
+TextButton_Roundify_8px_8.Active = true
+TextButton_Roundify_8px_8.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_8px_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_8px_8.BackgroundTransparency = 1.000
+TextButton_Roundify_8px_8.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_8px_8.Selectable = true
+TextButton_Roundify_8px_8.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_8px_8.Image = "rbxassetid://3570695787"
+TextButton_Roundify_8px_8.ImageColor3 = Color3.fromRGB(61, 61, 61)
+TextButton_Roundify_8px_8.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_8px_8.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_8px_8.SliceScale = 0.667
+
+-- Module Scripts:
+
+local fake_module_scripts = {}
+
+do -- Scripts.DraggableObject
+	local script = Instance.new('ModuleScript', Scripts)
+	script.Name = "DraggableObject"
+	local function module_script()
+		--[[
+			@Author: Spynaz
+			@Description: Enables dragging on GuiObjects. Supports both mouse and touch.
+			
+			For instructions on how to use this module, go to this link:
+			https://devforum.roblox.com/t/simple-module-for-creating-draggable-gui-elements/230678
+		--]]
+		
+		local UDim2_new = UDim2.new
+		
+		local UserInputService = game:GetService("UserInputService")
+		
+		local DraggableObject 		= {}
+		DraggableObject.__index 	= DraggableObject
+		
+		-- Sets up a new draggable object
+		function DraggableObject.new(Object)
+			local self 			= {}
+			self.Object			= Object
+			self.DragStarted	= nil
+			self.DragEnded		= nil
+			self.Dragged		= nil
+			self.Dragging		= false
+			
+			setmetatable(self, DraggableObject)
+			
+			return self
+		end
+		
+		-- Enables dragging
+		function DraggableObject:Enable()
+			local object			= self.Object
+			local dragInput			= nil
+			local dragStart			= nil
+			local startPos			= nil
+			local preparingToDrag	= false
+			
+			-- Updates the element
+			local function update(input)
+				local delta 		= input.Position - dragStart
+				local newPosition	= UDim2_new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+				object.Position 	= newPosition
+			
+				return newPosition
+			end
+			
+			self.InputBegan = object.InputBegan:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+					preparingToDrag = true
+					--[[if self.DragStarted then
+						self.DragStarted()
+					end
+					
+					dragging	 	= true
+					dragStart 		= input.Position
+					startPos 		= Element.Position
+					--]]
+					
+					local connection 
+					connection = input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End and (self.Dragging or preparingToDrag) then
+							self.Dragging = false
+							connection:Disconnect()
+							
+							if self.DragEnded and not preparingToDrag then
+								self.DragEnded()
+							end
+							
+							preparingToDrag = false
+						end
+					end)
+				end
+			end)
+			
+			self.InputChanged = object.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					dragInput = input
+				end
+			end)
+			
+			self.InputChanged2 = UserInputService.InputChanged:Connect(function(input)
+				if object.Parent == nil then
+					self:Disable()
+					return
+				end
+				
+				if preparingToDrag then
+					preparingToDrag = false
+					
+					if self.DragStarted then
+						self.DragStarted()
+					end
+					
+					self.Dragging	= true
+					dragStart 		= input.Position
+					startPos 		= object.Position
+				end
+				
+				if input == dragInput and self.Dragging then
+					local newPosition = update(input)
+					
+					if self.Dragged then
+						self.Dragged(newPosition)
+					end
+				end
+			end)
+		end
+		
+		-- Disables dragging
+		function DraggableObject:Disable()
+			self.InputBegan:Disconnect()
+			self.InputChanged:Disconnect()
+			self.InputChanged2:Disconnect()
+			
+			if self.Dragging then
+				self.Dragging = false
+				
+				if self.DragEnded then
+					self.DragEnded()
+				end
+			end
+		end
+		
+		return DraggableObject
+		
+	end
+	fake_module_scripts[script] = module_script
+end
+do -- Scripts.SectionModule
+	local script = Instance.new('ModuleScript', Scripts)
+	script.Name = "SectionModule"
+	local function module_script()
+		local sections = {}
+		
+		function sections:ChangeSection(section)
+			
+			_G.CurrentSection = section
+			return section
+			
+		end
+		
+		function sections:GetCurrentSection()
+			
+			return _G.CurrentSection
+			
+		end
+		
+		return sections
+		
+	end
+	fake_module_scripts[script] = module_script
+end
+
+
+-- Scripts:
+
+local function QEXMX_fake_script() -- ImageButton.Close 
+	local script = Instance.new('LocalScript', ImageButton)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local gui = script.Parent.Parent.Parent.Parent
+	local btn = script.Parent
+	
+	btn.Activated:Connect(function()
+		
+		gui:Destroy()
+		
+	end)
+end
+coroutine.wrap(QEXMX_fake_script)()
+local function WCRF_fake_script() -- TextButton.SectionHandler 
+	local script = Instance.new('LocalScript', TextButton)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local main = script.Parent.Parent.Parent.Parent
+	local btn = script.Parent
+	local sm = require(main.Scripts.SectionModule)
+	
+	local function Change(x)
+		
+		local testframe = main.Status
+		local text = testframe.TextLabel
+		text.Text = ("Current section: "..tostring(x))
+		
+	end
+	
+	btn.Activated:Connect(function()
+		
+		local a_change = sm:ChangeSection(tostring(script.Parent.Parent.Name))
+		local current = sm:GetCurrentSection()
+		Change(current)
+		
+		for i,v in pairs(main.ExploitScripts:GetChildren()) do
+			
+			if v.name ~= script.Parent.Parent.Name then	
+				v.Visible = false
+			else
+				v.Visible = true
+			end
+			
+		end
+		
+	end)
+end
+coroutine.wrap(WCRF_fake_script)()
+local function JBSJZK_fake_script() -- TextButton_2.SectionHandler 
+	local script = Instance.new('LocalScript', TextButton_2)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local main = script.Parent.Parent.Parent.Parent
+	local btn = script.Parent
+	local sm = require(main.Scripts.SectionModule)
+	
+	local function Change(x)
+		
+		local testframe = main.Status
+		local text = testframe.TextLabel
+		text.Text = ("Current section: "..tostring(x))
+		
+	end
+	
+	btn.Activated:Connect(function()
+		
+		local a_change = sm:ChangeSection(tostring(script.Parent.Parent.Name))
+		local current = sm:GetCurrentSection()
+		Change(current)
+		
+		for i,v in pairs(main.ExploitScripts:GetChildren()) do
+			
+			if v.name ~= script.Parent.Parent.Name then	
+				v.Visible = false
+			else
+				v.Visible = true
+			end
+			
+		end
+		
+	end)
+end
+coroutine.wrap(JBSJZK_fake_script)()
+local function GJYDB_fake_script() -- TextButton_3.SectionHandler 
+	local script = Instance.new('LocalScript', TextButton_3)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local main = script.Parent.Parent.Parent.Parent
+	local btn = script.Parent
+	local sm = require(main.Scripts.SectionModule)
+	
+	local function Change(x)
+		
+		local testframe = main.Status
+		local text = testframe.TextLabel
+		text.Text = ("Current section: "..tostring(x))
+		
+	end
+	
+	btn.Activated:Connect(function()
+		
+		local a_change = sm:ChangeSection(tostring(script.Parent.Parent.Name))
+		local current = sm:GetCurrentSection()
+		Change(current)
+		
+		for i,v in pairs(main.ExploitScripts:GetChildren()) do
+			
+			if v.name ~= script.Parent.Parent.Name then	
+				v.Visible = false
+			else
+				v.Visible = true
+			end
+			
+		end
+		
+	end)
+end
+coroutine.wrap(GJYDB_fake_script)()
+local function YKAPBFR_fake_script() -- TextButton_4.SectionHandler 
+	local script = Instance.new('LocalScript', TextButton_4)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local main = script.Parent.Parent.Parent.Parent
+	local btn = script.Parent
+	local sm = require(main.Scripts.SectionModule)
+	
+	local function Change(x)
+		
+		local testframe = main.Status
+		local text = testframe.TextLabel
+		text.Text = ("Current section: "..tostring(x))
+		
+	end
+	
+	btn.Activated:Connect(function()
+		
+		local a_change = sm:ChangeSection(tostring(script.Parent.Parent.Name))
+		local current = sm:GetCurrentSection()
+		Change(current)
+		
+		for i,v in pairs(main.ExploitScripts:GetChildren()) do
+			
+			if v.name ~= script.Parent.Parent.Name then	
+				v.Visible = false
+			else
+				v.Visible = true
+			end
+			
+		end
+		
+	end)
+end
+coroutine.wrap(YKAPBFR_fake_script)()
+local function CHXOII_fake_script() -- Scripts.Drag 
+	local script = Instance.new('LocalScript', Scripts)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local drag_module = require(script.Parent.DraggableObject)
+	local frame_drag = drag_module.new(script.Parent.Parent)
+	
+	frame_drag:Enable()
+	
+end
+coroutine.wrap(CHXOII_fake_script)()
+local function FWFGOF_fake_script() -- Neko.NekoAnimations 
+	local script = Instance.new('LocalScript', Neko)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local btn = script.Parent
+	local raw = "https://pastebin.com/raw/p43xFY33"
+	
+	btn.Activated:Connect(function()
+	
+		if script.Parent.Parent:FindFirstChild("NetlessNotApplied") and not script.Parent:FindFirstChild("NetlessNotNeeded") then
+	
+			print("No netless applied! Applying netless...")
+			loadstring(game:HttpGet(('https://pastebin.com/raw/Cu7bKQWN'),true))()
+			wait(2)
+			script.Parent.Parent.NetlessNotApplied:Destroy()
+			loadstring(game:HttpGet((raw),true))()
+	
+		else
+			
+			loadstring(game:HttpGet((raw),true))()
+	
+		end
+	
+	end)
+end
+coroutine.wrap(FWFGOF_fake_script)()
+local function PEVNWS_fake_script() -- Chill.ChillAnimations 
+	local script = Instance.new('LocalScript', Chill)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local btn = script.Parent
+	local raw = "https://pastebin.com/raw/XmHFdTij"
+	
+	btn.Activated:Connect(function()
+	
+		if script.Parent.Parent:FindFirstChild("NetlessNotApplied") and not script.Parent:FindFirstChild("NetlessNotNeeded") then
+	
+			print("No netless applied! Applying netless...")
+			loadstring(game:HttpGet(('https://pastebin.com/raw/Cu7bKQWN'),true))()
+			wait(2)
+			script.Parent.Parent.NetlessNotApplied:Destroy()
+			loadstring(game:HttpGet((raw),true))()
+	
+		else
+		
+			loadstring(game:HttpGet((raw),true))()
+			
+		end
+	
+	end)
+end
+coroutine.wrap(PEVNWS_fake_script)()
+local function BQWYIXL_fake_script() -- NamelessAnimationsV4.NAV4Animations 
+	local script = Instance.new('LocalScript', NamelessAnimationsV4)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local btn = script.Parent
+	local raw = "https://pastebin.com/raw/UW1rpA7Q"
+	
+	btn.Activated:Connect(function()
+		
+			loadstring(game:HttpGet((raw),true))()
+	
+	end)
+end
+coroutine.wrap(BQWYIXL_fake_script)()
+local function WQIJZ_fake_script() -- Hathub.HathubV1 
+	local script = Instance.new('LocalScript', Hathub)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local btn = script.Parent
+	local raw = "https://pastebin.com/raw/1Cjz1RMH"
+	
+	btn.Activated:Connect(function()
+	
+		loadstring(game:HttpGet((raw),true))()
+	
+	end)
+end
+coroutine.wrap(WQIJZ_fake_script)()
+local function ENLDQUD_fake_script() -- SimpleSpy.SimpleSpy 
+	local script = Instance.new('LocalScript', SimpleSpy)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local btn = script.Parent
+	
+	btn.Activated:Connect(function()
+		
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua", true))()
+		
+	end)
+end
+coroutine.wrap(ENLDQUD_fake_script)()
+local function MYHC_fake_script() -- MouseFling.MouseFling 
+	local script = Instance.new('LocalScript', MouseFling)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local btn = script.Parent
+	
+	btn.Activated:Connect(function()
+		
+		loadstring(game:HttpGet("https://pastebin.com/raw/c3YA0L26", true))()
+		
+	end)
+end
+coroutine.wrap(MYHC_fake_script)()
+local function SJUSOU_fake_script() -- InfiniteYield.InfiniteYield 
+	local script = Instance.new('LocalScript', InfiniteYield)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local btn = script.Parent
+	
+	btn.Activated:Connect(function()
+		
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+		
+	end)
+end
+coroutine.wrap(SJUSOU_fake_script)()
+local function SRWGJU_fake_script() -- CMDX.CMD-X 
+	local script = Instance.new('LocalScript', CMDX)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local btn = script.Parent
+	
+	btn.Activated:Connect(function()
+		
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+		
+	end)
+end
+coroutine.wrap(SRWGJU_fake_script)()
