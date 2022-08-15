@@ -45,7 +45,7 @@ local TextButton_Roundify_8px_8 = Instance.new("ImageLabel")
 --Properties:
 
 GUI.Name = "GUI"
-GUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+GUI.Parent = game:GetService("CoreGui")
 
 Main.Name = "Main"
 Main.Parent = GUI
