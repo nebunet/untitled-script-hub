@@ -1,4 +1,5 @@
 # untitled-script-hub
+# script: loadstring(game:HttpGet('https://raw.githubusercontent.com/nebunet/untitled-script-hub/main/untitled-script-hub', true))()
 a script hub i decided to put together for fun
 
 hello! if you somehow managed to find this script (or i put this script out publicly), then i just wanna say a few things;
