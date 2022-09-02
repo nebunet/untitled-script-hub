@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local untitledscripthub = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Top = Instance.new("Frame")
@@ -11,7 +6,7 @@ local X = Instance.new("ImageButton")
 local Sections = Instance.new("Frame")
 local Animations = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
-local HatScripts = Instance.new("Frame")
+local Hats = Instance.new("Frame")
 local TextButton_2 = Instance.new("TextButton")
 local Utility = Instance.new("Frame")
 local TextButton_3 = Instance.new("TextButton")
@@ -28,10 +23,10 @@ local Chill = Instance.new("TextButton")
 local TextButton_Roundify_8px_2 = Instance.new("ImageLabel")
 local Nameless = Instance.new("TextButton")
 local NetlessNotNeeded = Instance.new("ImageLabel")
-local KrystalDance2 = Instance.new("TextButton")
-local NetlessNotNeeded_2 = Instance.new("ImageLabel")
 local UIGridLayout = Instance.new("UIGridLayout")
-local HatScripts_2 = Instance.new("Frame")
+local Helicopter = Instance.new("TextButton")
+local NetlessNotNeeded_2 = Instance.new("ImageLabel")
+local Hats_2 = Instance.new("Frame")
 local Hathub = Instance.new("TextButton")
 local NetlessNotNeeded_3 = Instance.new("ImageLabel")
 local UIGridLayout_2 = Instance.new("UIGridLayout")
@@ -57,7 +52,8 @@ local HubCredits = Instance.new("TextLabel")
 local LuaConversionCredits = Instance.new("TextLabel")
 local CreditsText = Instance.new("TextLabel")
 local Version = Instance.new("TextLabel")
-local Thankyou3 = Instance.new("TextLabel")
+local ThankYou3 = Instance.new("TextLabel")
+local DragCredits = Instance.new("TextLabel")
 
 --Properties:
 
@@ -127,28 +123,28 @@ TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 1.000
 TextButton.Size = UDim2.new(0, 75, 0, 14)
 TextButton.Font = Enum.Font.Cartoon
-TextButton.Text = "fe animations"
+TextButton.Text = "animations"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
 TextButton.TextYAlignment = Enum.TextYAlignment.Bottom
 
-HatScripts.Name = "Hat Scripts"
-HatScripts.Parent = Sections
-HatScripts.AnchorPoint = Vector2.new(0.5, 0.5)
-HatScripts.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-HatScripts.BorderColor3 = Color3.fromRGB(255, 255, 255)
-HatScripts.Position = UDim2.new(0.375, 0, 0.439622313, 0)
-HatScripts.Size = UDim2.new(0, 75, 0, 14)
-HatScripts.ZIndex = 0
+Hats.Name = "Hats"
+Hats.Parent = Sections
+Hats.AnchorPoint = Vector2.new(0.5, 0.5)
+Hats.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+Hats.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Hats.Position = UDim2.new(0.375, 0, 0.439622313, 0)
+Hats.Size = UDim2.new(0, 75, 0, 14)
+Hats.ZIndex = 0
 
-TextButton_2.Parent = HatScripts
+TextButton_2.Parent = Hats
 TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.BackgroundTransparency = 1.000
 TextButton_2.Size = UDim2.new(0, 75, 0, 14)
 TextButton_2.Font = Enum.Font.Cartoon
-TextButton_2.Text = "fe hats"
+TextButton_2.Text = "hats"
 TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextScaled = true
 TextButton_2.TextSize = 14.000
@@ -321,24 +317,29 @@ NetlessNotNeeded.ScaleType = Enum.ScaleType.Slice
 NetlessNotNeeded.SliceCenter = Rect.new(100, 100, 100, 100)
 NetlessNotNeeded.SliceScale = 0.667
 
-KrystalDance2.Name = "KrystalDance2"
-KrystalDance2.Parent = Animations_2
-KrystalDance2.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-KrystalDance2.BackgroundTransparency = 1.000
-KrystalDance2.BorderColor3 = Color3.fromRGB(255, 255, 255)
-KrystalDance2.BorderSizePixel = 0
-KrystalDance2.Position = UDim2.new(0.0199999809, 0, 0.689337969, 0)
-KrystalDance2.Size = UDim2.new(0, 88, 0, 20)
-KrystalDance2.ZIndex = 3
-KrystalDance2.Font = Enum.Font.Cartoon
-KrystalDance2.Text = "krystal dance v2"
-KrystalDance2.TextColor3 = Color3.fromRGB(255, 255, 255)
-KrystalDance2.TextScaled = true
-KrystalDance2.TextSize = 14.000
-KrystalDance2.TextWrapped = true
+UIGridLayout.Parent = Animations_2
+UIGridLayout.FillDirection = Enum.FillDirection.Vertical
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellSize = UDim2.new(0, 70, 0, 20)
+UIGridLayout.FillDirectionMaxCells = 6
+
+Helicopter.Name = "Helicopter"
+Helicopter.Parent = Animations_2
+Helicopter.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Helicopter.BackgroundTransparency = 1.000
+Helicopter.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Helicopter.BorderSizePixel = 0
+Helicopter.Position = UDim2.new(0.0199999809, 0, 0.505793691, 0)
+Helicopter.Size = UDim2.new(0, 88, 0, 20)
+Helicopter.ZIndex = 3
+Helicopter.Font = Enum.Font.Cartoon
+Helicopter.Text = "helicopter"
+Helicopter.TextColor3 = Color3.fromRGB(255, 255, 255)
+Helicopter.TextSize = 14.000
+Helicopter.TextWrapped = true
 
 NetlessNotNeeded_2.Name = "NetlessNotNeeded"
-NetlessNotNeeded_2.Parent = KrystalDance2
+NetlessNotNeeded_2.Parent = Helicopter
 NetlessNotNeeded_2.Active = true
 NetlessNotNeeded_2.AnchorPoint = Vector2.new(0.5, 0.5)
 NetlessNotNeeded_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -352,22 +353,16 @@ NetlessNotNeeded_2.ScaleType = Enum.ScaleType.Slice
 NetlessNotNeeded_2.SliceCenter = Rect.new(100, 100, 100, 100)
 NetlessNotNeeded_2.SliceScale = 0.667
 
-UIGridLayout.Parent = Animations_2
-UIGridLayout.FillDirection = Enum.FillDirection.Vertical
-UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIGridLayout.CellSize = UDim2.new(0, 70, 0, 20)
-UIGridLayout.FillDirectionMaxCells = 6
-
-HatScripts_2.Name = "Hat Scripts"
-HatScripts_2.Parent = ExploitScripts
-HatScripts_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-HatScripts_2.BackgroundTransparency = 1.000
-HatScripts_2.Position = UDim2.new(0, 0, 0.185567006, 0)
-HatScripts_2.Size = UDim2.new(0, 300, 0, 158)
-HatScripts_2.Visible = false
+Hats_2.Name = "Hats"
+Hats_2.Parent = ExploitScripts
+Hats_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hats_2.BackgroundTransparency = 1.000
+Hats_2.Position = UDim2.new(0, 0, 0.185567006, 0)
+Hats_2.Size = UDim2.new(0, 300, 0, 158)
+Hats_2.Visible = false
 
 Hathub.Name = "Hathub"
-Hathub.Parent = HatScripts_2
+Hathub.Parent = Hats_2
 Hathub.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
 Hathub.BackgroundTransparency = 1.000
 Hathub.BorderColor3 = Color3.fromRGB(255, 255, 255)
@@ -395,14 +390,14 @@ NetlessNotNeeded_3.ScaleType = Enum.ScaleType.Slice
 NetlessNotNeeded_3.SliceCenter = Rect.new(100, 100, 100, 100)
 NetlessNotNeeded_3.SliceScale = 0.667
 
-UIGridLayout_2.Parent = HatScripts_2
+UIGridLayout_2.Parent = Hats_2
 UIGridLayout_2.FillDirection = Enum.FillDirection.Vertical
 UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout_2.CellSize = UDim2.new(0, 70, 0, 20)
 UIGridLayout_2.FillDirectionMaxCells = 6
 
 Car.Name = "Car"
-Car.Parent = HatScripts_2
+Car.Parent = Hats_2
 Car.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
 Car.BackgroundTransparency = 1.000
 Car.BorderColor3 = Color3.fromRGB(255, 255, 255)
@@ -436,7 +431,6 @@ Utility_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Utility_2.BackgroundTransparency = 1.000
 Utility_2.Position = UDim2.new(0, 0, 0.185567006, 0)
 Utility_2.Size = UDim2.new(0, 300, 0, 158)
-Utility_2.Visible = false
 
 SimpleSpy.Name = "SimpleSpy"
 SimpleSpy.Parent = Utility_2
@@ -508,7 +502,8 @@ InfiniteYield.ZIndex = 3
 InfiniteYield.Font = Enum.Font.Cartoon
 InfiniteYield.Text = "infinite yield"
 InfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
-InfiniteYield.TextSize = 14.000
+InfiniteYield.TextSize = 12.000
+InfiniteYield.TextWrapped = true
 
 TextButton_Roundify_8px_5.Name = "TextButton_Roundify_8px"
 TextButton_Roundify_8px_5.Parent = InfiniteYield
@@ -634,7 +629,7 @@ ScriptCredits.Name = "ScriptCredits"
 ScriptCredits.Parent = SettingsCredits_2
 ScriptCredits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScriptCredits.BackgroundTransparency = 1.000
-ScriptCredits.Position = UDim2.new(0.223333329, 0, 0.215189874, 0)
+ScriptCredits.Position = UDim2.new(0.223333329, 0, 0.177215189, 0)
 ScriptCredits.Size = UDim2.new(0, 165, 0, 18)
 ScriptCredits.Font = Enum.Font.Cartoon
 ScriptCredits.Text = "various people - their scripts"
@@ -648,7 +643,7 @@ HubCredits.Name = "HubCredits"
 HubCredits.Parent = SettingsCredits_2
 HubCredits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 HubCredits.BackgroundTransparency = 1.000
-HubCredits.Position = UDim2.new(0.223333329, 0, 0.32911393, 0)
+HubCredits.Position = UDim2.new(0.223333329, 0, 0.291139245, 0)
 HubCredits.Size = UDim2.new(0, 165, 0, 18)
 HubCredits.Font = Enum.Font.Cartoon
 HubCredits.Text = "nebunet - hub creation"
@@ -661,7 +656,7 @@ LuaConversionCredits.Name = "LuaConversionCredits"
 LuaConversionCredits.Parent = SettingsCredits_2
 LuaConversionCredits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 LuaConversionCredits.BackgroundTransparency = 1.000
-LuaConversionCredits.Position = UDim2.new(0.223333329, 0, 0.443037987, 0)
+LuaConversionCredits.Position = UDim2.new(0.223333329, 0, 0.405063301, 0)
 LuaConversionCredits.Size = UDim2.new(0, 165, 0, 18)
 LuaConversionCredits.Font = Enum.Font.Cartoon
 LuaConversionCredits.Text = "frstee - for gui to lua"
@@ -674,7 +669,7 @@ CreditsText.Name = "CreditsText"
 CreditsText.Parent = SettingsCredits_2
 CreditsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CreditsText.BackgroundTransparency = 1.000
-CreditsText.Position = UDim2.new(0.223333329, 0, 0.101265825, 0)
+CreditsText.Position = UDim2.new(0.223333329, 0, 0.0632911474, 0)
 CreditsText.Size = UDim2.new(0, 165, 0, 18)
 CreditsText.Font = Enum.Font.Cartoon
 CreditsText.Text = "credits"
@@ -687,27 +682,40 @@ Version.Name = "Version"
 Version.Parent = SettingsCredits_2
 Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Version.BackgroundTransparency = 1.000
-Version.Position = UDim2.new(0.456666678, 0, 0.670886099, 0)
+Version.Position = UDim2.new(0.456666678, 0, 0.74683547, 0)
 Version.Size = UDim2.new(0, 26, 0, 18)
 Version.Font = Enum.Font.Cartoon
-Version.Text = "v1.0"
+Version.Text = "v1.01"
 Version.TextColor3 = Color3.fromRGB(255, 255, 255)
 Version.TextSize = 12.000
 Version.TextTransparency = 0.500
 Version.TextWrapped = true
 
-Thankyou3.Name = "Thank you <3"
-Thankyou3.Parent = SettingsCredits_2
-Thankyou3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Thankyou3.BackgroundTransparency = 1.000
-Thankyou3.Position = UDim2.new(0.223333329, 0, 0.556962013, 0)
-Thankyou3.Size = UDim2.new(0, 165, 0, 18)
-Thankyou3.Font = Enum.Font.Cartoon
-Thankyou3.Text = "you - for using this script <3"
-Thankyou3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Thankyou3.TextSize = 14.000
-Thankyou3.TextWrapped = true
-Thankyou3.TextXAlignment = Enum.TextXAlignment.Left
+ThankYou3.Name = "ThankYou<3"
+ThankYou3.Parent = SettingsCredits_2
+ThankYou3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ThankYou3.BackgroundTransparency = 1.000
+ThankYou3.Position = UDim2.new(0.223333329, 0, 0.632911384, 0)
+ThankYou3.Size = UDim2.new(0, 165, 0, 18)
+ThankYou3.Font = Enum.Font.Cartoon
+ThankYou3.Text = "you - for using this script <3"
+ThankYou3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ThankYou3.TextSize = 14.000
+ThankYou3.TextWrapped = true
+ThankYou3.TextXAlignment = Enum.TextXAlignment.Left
+
+DragCredits.Name = "DragCredits"
+DragCredits.Parent = SettingsCredits_2
+DragCredits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DragCredits.BackgroundTransparency = 1.000
+DragCredits.Position = UDim2.new(0.223333329, 0, 0.518987358, 0)
+DragCredits.Size = UDim2.new(0, 165, 0, 18)
+DragCredits.Font = Enum.Font.Cartoon
+DragCredits.Text = "spynaz - for gui drag module"
+DragCredits.TextColor3 = Color3.fromRGB(255, 255, 255)
+DragCredits.TextSize = 14.000
+DragCredits.TextWrapped = true
+DragCredits.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Module Scripts:
 
@@ -885,10 +893,10 @@ do -- Scripts.ScriptLoader
 			["MouseFling"] = "https://pastebin.com/raw/c3YA0L26",
 			["InfiniteYield"] = "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",
 			["CMD-X"] = "https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",
-			["KrystalDance2"] = "https://pastebin.com/FV3HLmTH",
 			["Car"] = "https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua",
 			["SyntaxHubV2"] = "https://raw.githubusercontent.com/Memeboiyot/SyntaxRebornOfficial/main/SyntaxReborn",
-			["NullwareV3"] = "im not doing this lol"
+			["NullwareV3"] = "https://pastebin.com/raw/dhBdkhgg",
+			["Helicopter"] = "https://pastebin.com/raw/4vTimBLH"
 			
 		}
 		
@@ -898,12 +906,9 @@ do -- Scripts.ScriptLoader
 			
 			if netlessneeded == true and getgenv().netlessapplied == false and script ~= "NullwareV3" then
 				loadstring(game:HttpGet(('https://pastebin.com/raw/Cu7bKQWN'),true))()
-				task.wait(1)
+				task.wait(2.5)
 				getgenv().netlessapplied = true
 				loadstring(game:HttpGet(script, true))()
-			elseif script == "NullwareV3" then
-				getgenv().Theme = "Purple"
-				loadstring(game:HttpGet("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/2d722888a388017c18028cd434c43a25/raw/dcccf1027fe4b90780e47767aaf584389c9d7771/EULma3fU90PUOKUn?identifier=".. (function()local a=""for b=1,256 do local c=math.random(1,3)a=a..string.char(c==1 and math.random(48,57)or c==2 and math.random(97,122)or c==3 and math.random(65,90))end;return a end)()))()
 			else
 				loadstring(game:HttpGet(script, true))()
 			end
@@ -930,7 +935,7 @@ end
 
 -- Scripts:
 
-local function CVWJ_fake_script() -- X.Close 
+local function STFATRP_fake_script() -- X.Close 
 	local script = Instance.new('LocalScript', X)
 	local req = require
 	local require = function(obj)
@@ -945,181 +950,68 @@ local function CVWJ_fake_script() -- X.Close
 	local btn = script.Parent
 	
 	btn.Activated:Connect(function()
+		gui:Destroy()	
+	end)
+end
+coroutine.wrap(STFATRP_fake_script)()
+local function ECDHO_fake_script() -- Sections.SectionHandler 
+	local script = Instance.new('LocalScript', Sections)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local sectionsFrame = script.Parent
+	
+	local main = script.Parent.Parent
+	local sm = require(main.Scripts.SectionModule)
+	
+	local function Change(x)
+	
+		local statusframe = main.Status
+		local text = statusframe.TextLabel
+		text.Text = ("Current section: "..tostring(x))
+	
+	end
+	
+	local function onButtonActivated(x)
+	
+		local a_change = sm:ChangeSection(tostring(x.Parent.Name))
+		local current = sm:GetCurrentSection()
+		Change(current)
+	
+		for i,v in pairs(main.ExploitScripts:GetChildren()) do
+	
+			if v.name ~= x.Parent.Name then	
+				v.Visible = false
+			else
+				v.Visible = true
+			end
+	
+		end
+	
+	end
+	
+	for _, btn in pairs(sectionsFrame:GetDescendants()) do
 		
-		gui:Destroy()
+		if btn:IsA("TextButton") then
+			
+			btn.Activated:Connect(function()
+				
+				onButtonActivated(btn)
+				
+			end)
+			
+		end
 		
-	end)
+	end
 end
-coroutine.wrap(CVWJ_fake_script)()
-local function EHQGAPG_fake_script() -- TextButton.SectionSwitch 
-	local script = Instance.new('LocalScript', TextButton)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	local main = script.Parent.Parent.Parent.Parent
-	local btn = script.Parent
-	local sm = require(main.Scripts.SectionModule)
-	
-	local function Change(x)
-	
-		local statusframe = main.Status
-		local text = statusframe.TextLabel
-		text.Text = ("Current section: "..tostring(x))
-	
-	end
-	
-	btn.Activated:Connect(function()
-	
-		local a_change = sm:ChangeSection(tostring(script.Parent.Parent.Name))
-		local current = sm:GetCurrentSection()
-		Change(current)
-	
-		for i,v in pairs(main.ExploitScripts:GetChildren()) do
-	
-			if v.name ~= script.Parent.Parent.Name then	
-				v.Visible = false
-			else
-				v.Visible = true
-			end
-	
-		end
-	
-	end)
-end
-coroutine.wrap(EHQGAPG_fake_script)()
-local function XZGH_fake_script() -- TextButton_2.SectionSwitch 
-	local script = Instance.new('LocalScript', TextButton_2)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	local main = script.Parent.Parent.Parent.Parent
-	local btn = script.Parent
-	local sm = require(main.Scripts.SectionModule)
-	
-	local function Change(x)
-	
-		local statusframe = main.Status
-		local text = statusframe.TextLabel
-		text.Text = ("Current section: "..tostring(x))
-	
-	end
-	
-	btn.Activated:Connect(function()
-	
-		local a_change = sm:ChangeSection(tostring(script.Parent.Parent.Name))
-		local current = sm:GetCurrentSection()
-		Change(current)
-	
-		for i,v in pairs(main.ExploitScripts:GetChildren()) do
-	
-			if v.name ~= script.Parent.Parent.Name then	
-				v.Visible = false
-			else
-				v.Visible = true
-			end
-	
-		end
-	
-	end)
-end
-coroutine.wrap(XZGH_fake_script)()
-local function GNCB_fake_script() -- TextButton_3.SectionSwitch 
-	local script = Instance.new('LocalScript', TextButton_3)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	local main = script.Parent.Parent.Parent.Parent
-	local btn = script.Parent
-	local sm = require(main.Scripts.SectionModule)
-	
-	local function Change(x)
-	
-		local statusframe = main.Status
-		local text = statusframe.TextLabel
-		text.Text = ("Current section: "..tostring(x))
-	
-	end
-	
-	btn.Activated:Connect(function()
-	
-		local a_change = sm:ChangeSection(tostring(script.Parent.Parent.Name))
-		local current = sm:GetCurrentSection()
-		Change(current)
-	
-		for i,v in pairs(main.ExploitScripts:GetChildren()) do
-	
-			if v.name ~= script.Parent.Parent.Name then	
-				v.Visible = false
-			else
-				v.Visible = true
-			end
-	
-		end
-	
-	end)
-end
-coroutine.wrap(GNCB_fake_script)()
-local function GOUQ_fake_script() -- TextButton_4.SectionSwitch 
-	local script = Instance.new('LocalScript', TextButton_4)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	local main = script.Parent.Parent.Parent.Parent
-	local btn = script.Parent
-	local sm = require(main.Scripts.SectionModule)
-	
-	local function Change(x)
-	
-		local statusframe = main.Status
-		local text = statusframe.TextLabel
-		text.Text = ("Current section: "..tostring(x))
-	
-	end
-	
-	btn.Activated:Connect(function()
-	
-		local a_change = sm:ChangeSection(tostring(script.Parent.Parent.Name))
-		local current = sm:GetCurrentSection()
-		Change(current)
-	
-		for i,v in pairs(main.ExploitScripts:GetChildren()) do
-	
-			if v.name ~= script.Parent.Parent.Name then	
-				v.Visible = false
-			else
-				v.Visible = true
-			end
-	
-		end
-	
-	end)
-end
-coroutine.wrap(GOUQ_fake_script)()
-local function ENGRO_fake_script() -- Scripts.Drag 
+coroutine.wrap(ECDHO_fake_script)()
+local function JCZM_fake_script() -- Scripts.Drag 
 	local script = Instance.new('LocalScript', Scripts)
 	local req = require
 	local require = function(obj)
@@ -1136,8 +1028,8 @@ local function ENGRO_fake_script() -- Scripts.Drag
 	frame_drag:Enable()
 	
 end
-coroutine.wrap(ENGRO_fake_script)()
-local function FTRCZN_fake_script() -- Main.ButtonHandler 
+coroutine.wrap(JCZM_fake_script)()
+local function SFSN_fake_script() -- Main.ButtonHandler 
 	local script = Instance.new('LocalScript', Main)
 	local req = require
 	local require = function(obj)
@@ -1154,7 +1046,7 @@ local function FTRCZN_fake_script() -- Main.ButtonHandler
 	
 	for i, v in next, scriptFolder:GetDescendants() do
 		
-		if v:IsA("TextButton") and v.Parent.Parent == scriptFolder then
+		if v:IsA("TextButton") then
 			
 			v.Activated:Connect(function()
 				
@@ -1176,4 +1068,25 @@ local function FTRCZN_fake_script() -- Main.ButtonHandler
 		
 	end
 end
-coroutine.wrap(FTRCZN_fake_script)()
+coroutine.wrap(SFSN_fake_script)()
+local function WWOVLIE_fake_script() -- Main.Startup 
+	local script = Instance.new('LocalScript', Main)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local sound = Instance.new("Sound")
+	sound.Parent = script.Parent
+	sound.PlayOnRemove = true
+	sound.SoundId = "rbxassetid://573639200"
+	sound.Volume = .5
+	
+	sound:Destroy()
+	script:Destroy()
+end
+coroutine.wrap(WWOVLIE_fake_script)()
