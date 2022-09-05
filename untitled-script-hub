@@ -39,14 +39,20 @@ local Hathub = Instance.new("TextButton")
 local NetlessNotNeeded_5 = Instance.new("ImageLabel")
 local Car = Instance.new("TextButton")
 local NetlessNotNeeded_6 = Instance.new("ImageLabel")
+local R6Anims = Instance.new("TextButton")
+local NetlessNotNeeded_7 = Instance.new("ImageLabel")
+local WalkOnWalls = Instance.new("TextButton")
+local NetlessNotNeeded_8 = Instance.new("ImageLabel")
+local Flips = Instance.new("TextButton")
+local NetlessNotNeeded_9 = Instance.new("ImageLabel")
 local Animations_2 = Instance.new("Frame")
 local UIGridLayout_3 = Instance.new("UIGridLayout")
 local Neko = Instance.new("TextButton")
 local Chill = Instance.new("TextButton")
 local Nameless = Instance.new("TextButton")
-local NetlessNotNeeded_7 = Instance.new("ImageLabel")
+local NetlessNotNeeded_10 = Instance.new("ImageLabel")
 local Helicopter = Instance.new("TextButton")
-local NetlessNotNeeded_8 = Instance.new("ImageLabel")
+local NetlessNotNeeded_11 = Instance.new("ImageLabel")
 local Settings_2 = Instance.new("Frame")
 local Placeholder = Instance.new("TextLabel")
 local Version = Instance.new("TextLabel")
@@ -270,7 +276,6 @@ UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 UIGridLayout.CellSize = UDim2.new(0, 50, 0, 25)
-UIGridLayout.StartCorner = Enum.StartCorner.BottomRight
 
 CMDX.Name = "CMD-X"
 CMDX.Parent = Utility_2
@@ -350,7 +355,7 @@ Info.BackgroundTransparency = 1.000
 Info.Position = UDim2.new(0.0605243593, 0, 0.459933966, 0)
 Info.Size = UDim2.new(0, 232, 0, 42)
 Info.Font = Enum.Font.SourceSansBold
-Info.Text = "here you will find all kinds of scripts for your exploiting needs. enjoy your stay!"
+Info.Text = "here you will find all kinds of scripts for your exploiting needs, all wrapped into one nice package. enjoy your stay!"
 Info.TextColor3 = Color3.fromRGB(255, 255, 255)
 Info.TextSize = 14.000
 Info.TextWrapped = true
@@ -381,7 +386,6 @@ UIGridLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
 UIGridLayout_2.CellSize = UDim2.new(0, 50, 0, 25)
-UIGridLayout_2.StartCorner = Enum.StartCorner.BottomRight
 
 Hathub.Name = "Hathub"
 Hathub.Parent = Scripts_2
@@ -390,7 +394,7 @@ Hathub.BorderSizePixel = 0
 Hathub.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
 Hathub.Size = UDim2.new(0, 50, 0, 16)
 Hathub.Font = Enum.Font.SourceSansBold
-Hathub.Text = "hathub"
+Hathub.Text = "hathub v1"
 Hathub.TextColor3 = Color3.fromRGB(255, 255, 255)
 Hathub.TextSize = 11.000
 Hathub.TextWrapped = true
@@ -421,6 +425,65 @@ NetlessNotNeeded_6.Size = UDim2.new(0, 100, 0, 100)
 NetlessNotNeeded_6.Visible = false
 NetlessNotNeeded_6.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
+R6Anims.Name = "R6Anims"
+R6Anims.Parent = Scripts_2
+R6Anims.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+R6Anims.BorderSizePixel = 0
+R6Anims.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+R6Anims.Size = UDim2.new(0, 50, 0, 16)
+R6Anims.Font = Enum.Font.SourceSansBold
+R6Anims.Text = "r6 animations GUI"
+R6Anims.TextColor3 = Color3.fromRGB(255, 255, 255)
+R6Anims.TextScaled = true
+R6Anims.TextSize = 11.000
+R6Anims.TextWrapped = true
+
+NetlessNotNeeded_7.Name = "NetlessNotNeeded"
+NetlessNotNeeded_7.Parent = R6Anims
+NetlessNotNeeded_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NetlessNotNeeded_7.Size = UDim2.new(0, 100, 0, 100)
+NetlessNotNeeded_7.Visible = false
+NetlessNotNeeded_7.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+WalkOnWalls.Name = "WalkOnWalls"
+WalkOnWalls.Parent = Scripts_2
+WalkOnWalls.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+WalkOnWalls.BorderSizePixel = 0
+WalkOnWalls.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+WalkOnWalls.Size = UDim2.new(0, 50, 0, 16)
+WalkOnWalls.Font = Enum.Font.SourceSansBold
+WalkOnWalls.Text = "walk on walls"
+WalkOnWalls.TextColor3 = Color3.fromRGB(255, 255, 255)
+WalkOnWalls.TextScaled = true
+WalkOnWalls.TextSize = 11.000
+WalkOnWalls.TextWrapped = true
+
+NetlessNotNeeded_8.Name = "NetlessNotNeeded"
+NetlessNotNeeded_8.Parent = WalkOnWalls
+NetlessNotNeeded_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NetlessNotNeeded_8.Size = UDim2.new(0, 100, 0, 100)
+NetlessNotNeeded_8.Visible = false
+NetlessNotNeeded_8.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+Flips.Name = "Flips"
+Flips.Parent = Scripts_2
+Flips.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Flips.BorderSizePixel = 0
+Flips.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+Flips.Size = UDim2.new(0, 50, 0, 16)
+Flips.Font = Enum.Font.SourceSansBold
+Flips.Text = "flips"
+Flips.TextColor3 = Color3.fromRGB(255, 255, 255)
+Flips.TextSize = 11.000
+Flips.TextWrapped = true
+
+NetlessNotNeeded_9.Name = "NetlessNotNeeded"
+NetlessNotNeeded_9.Parent = Flips
+NetlessNotNeeded_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NetlessNotNeeded_9.Size = UDim2.new(0, 100, 0, 100)
+NetlessNotNeeded_9.Visible = false
+NetlessNotNeeded_9.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
 Animations_2.Name = "Animations"
 Animations_2.Parent = Frames
 Animations_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -434,7 +497,6 @@ UIGridLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIGridLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout_3.VerticalAlignment = Enum.VerticalAlignment.Center
 UIGridLayout_3.CellSize = UDim2.new(0, 50, 0, 25)
-UIGridLayout_3.StartCorner = Enum.StartCorner.BottomRight
 
 Neko.Name = "Neko"
 Neko.Parent = Animations_2
@@ -473,12 +535,12 @@ Nameless.TextScaled = true
 Nameless.TextSize = 11.000
 Nameless.TextWrapped = true
 
-NetlessNotNeeded_7.Name = "NetlessNotNeeded"
-NetlessNotNeeded_7.Parent = Nameless
-NetlessNotNeeded_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_7.Size = UDim2.new(0, 100, 0, 100)
-NetlessNotNeeded_7.Visible = false
-NetlessNotNeeded_7.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+NetlessNotNeeded_10.Name = "NetlessNotNeeded"
+NetlessNotNeeded_10.Parent = Nameless
+NetlessNotNeeded_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NetlessNotNeeded_10.Size = UDim2.new(0, 100, 0, 100)
+NetlessNotNeeded_10.Visible = false
+NetlessNotNeeded_10.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 Helicopter.Name = "Helicopter"
 Helicopter.Parent = Animations_2
@@ -493,12 +555,12 @@ Helicopter.TextScaled = true
 Helicopter.TextSize = 11.000
 Helicopter.TextWrapped = true
 
-NetlessNotNeeded_8.Name = "NetlessNotNeeded"
-NetlessNotNeeded_8.Parent = Helicopter
-NetlessNotNeeded_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_8.Size = UDim2.new(0, 100, 0, 100)
-NetlessNotNeeded_8.Visible = false
-NetlessNotNeeded_8.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+NetlessNotNeeded_11.Name = "NetlessNotNeeded"
+NetlessNotNeeded_11.Parent = Helicopter
+NetlessNotNeeded_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NetlessNotNeeded_11.Size = UDim2.new(0, 100, 0, 100)
+NetlessNotNeeded_11.Visible = false
+NetlessNotNeeded_11.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 Settings_2.Name = "Settings"
 Settings_2.Parent = Frames
@@ -528,7 +590,7 @@ Version.BackgroundTransparency = 1.000
 Version.Position = UDim2.new(0, 0, 0.830656052, 0)
 Version.Size = UDim2.new(0, 267, 0, 23)
 Version.Font = Enum.Font.SourceSansBold
-Version.Text = "v1.1"
+Version.Text = "v1.11"
 Version.TextColor3 = Color3.fromRGB(70, 69, 69)
 Version.TextSize = 14.000
 Version.TextWrapped = true
@@ -845,7 +907,10 @@ do -- Modules_2.ScriptLoader
 			["InfiniteYield"] = "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",
 			["CMD-X"] = "https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",
 			["Car"] = "https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua",
-			["Helicopter"] = "https://pastebin.com/raw/4vTimBLH"
+			["Helicopter"] = "https://pastebin.com/raw/4vTimBLH",
+			["R6Anims"] = "https://pastebin.com/raw/YWpCjDXm",
+			["WalkOnWalls"] = "https://pastebin.com/raw/iYG5CTY5",
+			["Flips"] = "https://pastebin.com/raw/JRAAdnkX"
 			
 		}
 		
@@ -882,7 +947,7 @@ end
 
 -- Scripts:
 
-local function BRBUD_fake_script() -- HomeTransition.Home 
+local function ORIFEWD_fake_script() -- HomeTransition.Home 
 	local script = Instance.new('LocalScript', HomeTransition)
 	local req = require
 	local require = function(obj)
@@ -939,9 +1004,11 @@ local function BRBUD_fake_script() -- HomeTransition.Home
 		main.Visible = true
 		
 		task.spawn(function()
-			main.sound:Play()
-			wait(1)
-			main.sound:Destroy()	
+			local openSound = Instance.new("Sound", game:GetService("SoundService"))
+			openSound.SoundId = "rbxassetid://6079105785"
+			openSound:Play()
+			task.wait(1)
+			openSound:Destroy()	
 		end)
 		
 		main:TweenSize(ud2(0, 300, 0, 175), "Out", "Sine", .5)
@@ -961,8 +1028,8 @@ local function BRBUD_fake_script() -- HomeTransition.Home
 			
 	end)
 end
-coroutine.wrap(BRBUD_fake_script)()
-local function PMJZI_fake_script() -- Modules.Drag 
+coroutine.wrap(ORIFEWD_fake_script)()
+local function RBZSE_fake_script() -- Modules.Drag 
 	local script = Instance.new('LocalScript', Modules)
 	local req = require
 	local require = function(obj)
@@ -978,8 +1045,8 @@ local function PMJZI_fake_script() -- Modules.Drag
 	
 	frame_drag:Enable()
 end
-coroutine.wrap(PMJZI_fake_script)()
-local function NRBJ_fake_script() -- Modules_2.Drag 
+coroutine.wrap(RBZSE_fake_script)()
+local function FWCXQC_fake_script() -- Modules_2.Drag 
 	local script = Instance.new('LocalScript', Modules_2)
 	local req = require
 	local require = function(obj)
@@ -995,8 +1062,8 @@ local function NRBJ_fake_script() -- Modules_2.Drag
 	
 	frame_drag:Enable()
 end
-coroutine.wrap(NRBJ_fake_script)()
-local function QLEYTXP_fake_script() -- SideBar.SectionHandler 
+coroutine.wrap(FWCXQC_fake_script)()
+local function NZVQA_fake_script() -- SideBar.SectionHandler 
 	local script = Instance.new('LocalScript', SideBar)
 	local req = require
 	local require = function(obj)
@@ -1046,8 +1113,8 @@ local function QLEYTXP_fake_script() -- SideBar.SectionHandler
 		
 	end
 end
-coroutine.wrap(QLEYTXP_fake_script)()
-local function NTSQXN_fake_script() -- Close.Close 
+coroutine.wrap(NZVQA_fake_script)()
+local function SDKDVJ_fake_script() -- Close.Close 
 	local script = Instance.new('LocalScript', Close)
 	local req = require
 	local require = function(obj)
@@ -1065,8 +1132,8 @@ local function NTSQXN_fake_script() -- Close.Close
 		gui:Destroy()	
 	end)
 end
-coroutine.wrap(NTSQXN_fake_script)()
-local function ZOYJM_fake_script() -- Sections.ScriptHandler 
+coroutine.wrap(SDKDVJ_fake_script)()
+local function ZSXW_fake_script() -- Sections.ScriptHandler 
 	local script = Instance.new('LocalScript', Sections)
 	local req = require
 	local require = function(obj)
@@ -1106,8 +1173,8 @@ local function ZOYJM_fake_script() -- Sections.ScriptHandler
 		
 	end
 end
-coroutine.wrap(ZOYJM_fake_script)()
-local function WVXQK_fake_script() -- Main.Hide 
+coroutine.wrap(ZSXW_fake_script)()
+local function HRRH_fake_script() -- Main.Hide 
 	local script = Instance.new('LocalScript', Main)
 	local req = require
 	local require = function(obj)
@@ -1137,4 +1204,4 @@ local function WVXQK_fake_script() -- Main.Hide
 		
 	end
 end
-coroutine.wrap(WVXQK_fake_script)()
+coroutine.wrap(HRRH_fake_script)()
