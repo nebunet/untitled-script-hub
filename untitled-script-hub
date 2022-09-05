@@ -1,728 +1,503 @@
-local untitledscripthub = Instance.new("ScreenGui")
-local Main = Instance.new("Frame")
-local Top = Instance.new("Frame")
+local untitledscripthubOVERHAUL = Instance.new("ScreenGui")
+local Opening = Instance.new("ImageLabel")
 local Title = Instance.new("TextLabel")
-local X = Instance.new("ImageButton")
-local Sections = Instance.new("Frame")
-local Animations = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local Hats = Instance.new("Frame")
-local TextButton_2 = Instance.new("TextButton")
-local Utility = Instance.new("Frame")
-local TextButton_3 = Instance.new("TextButton")
-local SettingsCredits = Instance.new("Frame")
-local TextButton_4 = Instance.new("TextButton")
-local Status = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local Scripts = Instance.new("Folder")
-local ExploitScripts = Instance.new("Folder")
-local Animations_2 = Instance.new("Frame")
-local Neko = Instance.new("TextButton")
-local TextButton_Roundify_8px = Instance.new("ImageLabel")
-local Chill = Instance.new("TextButton")
-local TextButton_Roundify_8px_2 = Instance.new("ImageLabel")
-local Nameless = Instance.new("TextButton")
-local NetlessNotNeeded = Instance.new("ImageLabel")
-local UIGridLayout = Instance.new("UIGridLayout")
-local Helicopter = Instance.new("TextButton")
-local NetlessNotNeeded_2 = Instance.new("ImageLabel")
-local Hats_2 = Instance.new("Frame")
-local Hathub = Instance.new("TextButton")
-local NetlessNotNeeded_3 = Instance.new("ImageLabel")
-local UIGridLayout_2 = Instance.new("UIGridLayout")
-local Car = Instance.new("TextButton")
-local NetlessNotNeeded_4 = Instance.new("ImageLabel")
+local HomeTransition = Instance.new("TextButton")
+local Modules = Instance.new("Folder")
+local UpdateLogShort = Instance.new("TextLabel")
+local Update1 = Instance.new("TextLabel")
+local Update2 = Instance.new("TextLabel")
+local More = Instance.new("TextLabel")
+local UpdateLogMenu = Instance.new("TextLabel")
+local Main = Instance.new("ImageLabel")
+local Modules_2 = Instance.new("Folder")
+local SideBar = Instance.new("Frame")
+local Stuff = Instance.new("Folder")
+local Settings = Instance.new("ImageButton")
+local Animations = Instance.new("ImageButton")
+local Scripts = Instance.new("ImageButton")
+local Utility = Instance.new("ImageButton")
+local Close = Instance.new("ImageButton")
+local Sections = Instance.new("Folder")
+local Frames = Instance.new("Folder")
 local Utility_2 = Instance.new("Frame")
 local SimpleSpy = Instance.new("TextButton")
-local TextButton_Roundify_8px_3 = Instance.new("ImageLabel")
-local MouseFling = Instance.new("TextButton")
-local TextButton_Roundify_8px_4 = Instance.new("ImageLabel")
-local InfiniteYield = Instance.new("TextButton")
-local TextButton_Roundify_8px_5 = Instance.new("ImageLabel")
+local UIGridLayout = Instance.new("UIGridLayout")
 local CMDX = Instance.new("TextButton")
-local TextButton_Roundify_8px_6 = Instance.new("ImageLabel")
+local InfiniteYield = Instance.new("TextButton")
+local MouseFling = Instance.new("TextButton")
+local Home = Instance.new("Frame")
+local ScriptImage = Instance.new("ImageLabel")
+local Info = Instance.new("TextLabel")
+local Welcome = Instance.new("TextLabel")
+local Scripts_2 = Instance.new("Frame")
+local UIGridLayout_2 = Instance.new("UIGridLayout")
+local Hathub = Instance.new("TextButton")
+local Car = Instance.new("TextButton")
+local Animations_2 = Instance.new("Frame")
 local UIGridLayout_3 = Instance.new("UIGridLayout")
-local NullwareV3 = Instance.new("TextButton")
-local TextButton_Roundify_8px_7 = Instance.new("ImageLabel")
-local SyntaxV2 = Instance.new("TextButton")
-local TextButton_Roundify_8px_8 = Instance.new("ImageLabel")
-local SettingsCredits_2 = Instance.new("Frame")
-local ScriptCredits = Instance.new("TextLabel")
-local HubCredits = Instance.new("TextLabel")
-local LuaConversionCredits = Instance.new("TextLabel")
-local CreditsText = Instance.new("TextLabel")
+local Neko = Instance.new("TextButton")
+local Chill = Instance.new("TextButton")
+local Nameless = Instance.new("TextButton")
+local Helicopter = Instance.new("TextButton")
+local Settings_2 = Instance.new("Frame")
+local Placeholder = Instance.new("TextLabel")
 local Version = Instance.new("TextLabel")
-local ThankYou3 = Instance.new("TextLabel")
-local DragCredits = Instance.new("TextLabel")
+local Title_2 = Instance.new("TextLabel")
+local Page = Instance.new("TextLabel")
 
---Properties:
+untitledscripthubOVERHAUL.Name = "untitled script hub (OVERHAUL)"
+untitledscripthubOVERHAUL.Parent = game:GetService("CoreGui")
 
-untitledscripthub.Name = "untitled script hub"
-untitledscripthub.Parent = game:GetService("CoreGui")
-
-Main.Name = "Main"
-Main.Parent = untitledscripthub
-Main.AnchorPoint = Vector2.new(0.5, 0.5)
-Main.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
-Main.BackgroundTransparency = 0.200
-Main.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Main.BorderSizePixel = 2
-Main.Position = UDim2.new(0.5, 0, 0.56036216, 0)
-Main.Size = UDim2.new(0, 300, 0, 194)
-
-Top.Name = "Top"
-Top.Parent = Main
-Top.AnchorPoint = Vector2.new(0.5, 0.5)
-Top.BackgroundColor3 = Color3.fromRGB(97, 97, 97)
-Top.BorderSizePixel = 0
-Top.Position = UDim2.new(0.5, 0, 0.0585471615, 0)
-Top.Size = UDim2.new(0, 300, 0, 23)
+Opening.Name = "Opening"
+Opening.Parent = untitledscripthubOVERHAUL
+Opening.AnchorPoint = Vector2.new(0.5, 0.5)
+Opening.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Opening.BackgroundTransparency = 1.000
+Opening.BorderSizePixel = 0
+Opening.Position = UDim2.new(0.499911606, 0, 0.563265264, 0)
+Opening.Size = UDim2.new(0, 200, 0, 150)
+Opening.Visible = false
+Opening.Image = "rbxassetid://3570695787"
+Opening.ImageColor3 = Color3.fromRGB(36, 36, 36)
+Opening.ScaleType = Enum.ScaleType.Slice
+Opening.SliceCenter = Rect.new(100, 100, 100, 100)
+Opening.SliceScale = 0.040
 
 Title.Name = "Title"
-Title.Parent = Top
+Title.Parent = Opening
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title.BackgroundTransparency = 1.000
-Title.Position = UDim2.new(0.0199999996, 0, 0, 0)
-Title.Size = UDim2.new(0, 200, 0, 23)
-Title.Font = Enum.Font.Cartoon
+Title.Position = UDim2.new(0.0400000028, 0, 0, 0)
+Title.Size = UDim2.new(0, 71, 0, 23)
+Title.Font = Enum.Font.SourceSansBold
 Title.Text = "untitled script hub"
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextSize = 14.000
-Title.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextXAlignment = Enum.TextXAlignment.Left
 
-X.Name = "X"
-X.Parent = Top
-X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-X.BackgroundTransparency = 1.000
-X.BorderSizePixel = 0
-X.Position = UDim2.new(0.920000017, 0, 0.0869565234, 0)
-X.Size = UDim2.new(0, 18, 0, 18)
-X.Image = "http://www.roblox.com/asset/?id=645779217"
+HomeTransition.Name = "HomeTransition"
+HomeTransition.Parent = Opening
+HomeTransition.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+HomeTransition.BorderSizePixel = 0
+HomeTransition.Position = UDim2.new(0.349999994, 0, 0.813333333, 0)
+HomeTransition.Size = UDim2.new(0, 60, 0, 18)
+HomeTransition.Font = Enum.Font.SourceSansBold
+HomeTransition.Text = "home"
+HomeTransition.TextColor3 = Color3.fromRGB(255, 255, 255)
+HomeTransition.TextSize = 14.000
+
+Modules.Name = "Modules"
+Modules.Parent = Opening
+
+UpdateLogShort.Name = "UpdateLogShort"
+UpdateLogShort.Parent = Opening
+UpdateLogShort.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UpdateLogShort.BackgroundTransparency = 1.000
+UpdateLogShort.Position = UDim2.new(0, 0, 0.153333336, 0)
+UpdateLogShort.Size = UDim2.new(0, 200, 0, 23)
+UpdateLogShort.Font = Enum.Font.SourceSansBold
+UpdateLogShort.Text = "update log"
+UpdateLogShort.TextColor3 = Color3.fromRGB(255, 255, 255)
+UpdateLogShort.TextScaled = true
+UpdateLogShort.TextSize = 18.000
+UpdateLogShort.TextWrapped = true
+
+Update1.Name = "Update1"
+Update1.Parent = Opening
+Update1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Update1.BackgroundTransparency = 1.000
+Update1.Position = UDim2.new(0, 0, 0.306666672, 0)
+Update1.Size = UDim2.new(0, 200, 0, 18)
+Update1.Font = Enum.Font.SourceSansBold
+Update1.Text = "HUGE revamp"
+Update1.TextColor3 = Color3.fromRGB(120, 249, 255)
+Update1.TextSize = 14.000
+Update1.TextWrapped = true
+
+Update2.Name = "Update2"
+Update2.Parent = Opening
+Update2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Update2.BackgroundTransparency = 1.000
+Update2.Position = UDim2.new(0, 0, 0.426666677, 0)
+Update2.Size = UDim2.new(0, 200, 0, 18)
+Update2.Font = Enum.Font.SourceSansBold
+Update2.Text = "better gui"
+Update2.TextColor3 = Color3.fromRGB(120, 249, 255)
+Update2.TextSize = 14.000
+Update2.TextWrapped = true
+
+More.Name = "More"
+More.Parent = Opening
+More.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+More.BackgroundTransparency = 1.000
+More.Position = UDim2.new(0, 0, 0.546666622, 0)
+More.Size = UDim2.new(0, 200, 0, 18)
+More.Font = Enum.Font.SourceSansBold
+More.Text = "plus more"
+More.TextColor3 = Color3.fromRGB(120, 249, 255)
+More.TextSize = 14.000
+More.TextWrapped = true
+
+UpdateLogMenu.Name = "UpdateLogMenu"
+UpdateLogMenu.Parent = Opening
+UpdateLogMenu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UpdateLogMenu.BackgroundTransparency = 1.000
+UpdateLogMenu.Position = UDim2.new(0, 0, 0.666666627, 0)
+UpdateLogMenu.Size = UDim2.new(0, 200, 0, 18)
+UpdateLogMenu.Font = Enum.Font.SourceSansBold
+UpdateLogMenu.Text = "(full update log can be found in main menu)"
+UpdateLogMenu.TextColor3 = Color3.fromRGB(120, 249, 255)
+UpdateLogMenu.TextSize = 10.000
+UpdateLogMenu.TextTransparency = 0.500
+UpdateLogMenu.TextWrapped = true
+
+Main.Name = "Main"
+Main.Parent = untitledscripthubOVERHAUL
+Main.AnchorPoint = Vector2.new(0.5, 0.5)
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.499911606, 0, 0.564285636, 0)
+Main.Size = UDim2.new(0, 300, 0, 175)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(36, 36, 36)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.040
+
+Modules_2.Name = "Modules"
+Modules_2.Parent = Main
+
+SideBar.Name = "SideBar"
+SideBar.Parent = Main
+SideBar.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+SideBar.BorderSizePixel = 0
+SideBar.Size = UDim2.new(0, 33, 0, 175)
+
+Stuff.Name = "Stuff"
+Stuff.Parent = SideBar
+
+Settings.Name = "Settings"
+Settings.Parent = Stuff
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.Position = UDim2.new(0, 0, 0.811428547, 0)
+Settings.Size = UDim2.new(0, 33, 0, 33)
+Settings.Image = "http://www.roblox.com/asset/?id=256294290"
+Settings.ImageColor3 = Color3.fromRGB(70, 70, 70)
+
+Animations.Name = "Animations"
+Animations.Parent = Stuff
+Animations.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Animations.BackgroundTransparency = 1.000
+Animations.Position = UDim2.new(0, 0, 0.199999988, 0)
+Animations.Size = UDim2.new(0, 33, 0, 33)
+Animations.Image = "rbxassetid://2151539455"
+Animations.ImageColor3 = Color3.fromRGB(70, 70, 70)
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Stuff
+Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.BackgroundTransparency = 1.000
+Scripts.Position = UDim2.new(0, 0, 0.0114285648, 0)
+Scripts.Size = UDim2.new(0, 33, 0, 33)
+Scripts.Image = "http://www.roblox.com/asset/?id=4728126418"
+Scripts.ImageColor3 = Color3.fromRGB(70, 70, 70)
+
+Utility.Name = "Utility"
+Utility.Parent = Stuff
+Utility.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Utility.BackgroundTransparency = 1.000
+Utility.Position = UDim2.new(0, 0, 0.405714273, 0)
+Utility.Size = UDim2.new(0, 33, 0, 33)
+Utility.Image = "http://www.roblox.com/asset/?id=10829352937"
+Utility.ImageColor3 = Color3.fromRGB(70, 70, 70)
+
+Close.Name = "Close"
+Close.Parent = Main
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.933333337, 0, 0.00695652561, 0)
+Close.Size = UDim2.new(0, 17, 0, 17)
+Close.Image = "http://www.roblox.com/asset/?id=645779217"
 
 Sections.Name = "Sections"
 Sections.Parent = Main
-Sections.AnchorPoint = Vector2.new(0.5, 0.5)
-Sections.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-Sections.BackgroundTransparency = 1.000
-Sections.BorderSizePixel = 0
-Sections.Position = UDim2.new(0.5, 0, 0.153908014, 0)
-Sections.Size = UDim2.new(0, 300, 0, 14)
 
-Animations.Name = "Animations"
-Animations.Parent = Sections
-Animations.AnchorPoint = Vector2.new(0.5, 0.5)
-Animations.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-Animations.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Animations.Position = UDim2.new(0.125, 0, 0.439622313, 0)
-Animations.Size = UDim2.new(0, 75, 0, 14)
-Animations.ZIndex = 0
-
-TextButton.Parent = Animations
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 1.000
-TextButton.Size = UDim2.new(0, 75, 0, 14)
-TextButton.Font = Enum.Font.Cartoon
-TextButton.Text = "animations"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
-TextButton.TextYAlignment = Enum.TextYAlignment.Bottom
-
-Hats.Name = "Hats"
-Hats.Parent = Sections
-Hats.AnchorPoint = Vector2.new(0.5, 0.5)
-Hats.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-Hats.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Hats.Position = UDim2.new(0.375, 0, 0.439622313, 0)
-Hats.Size = UDim2.new(0, 75, 0, 14)
-Hats.ZIndex = 0
-
-TextButton_2.Parent = Hats
-TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.BackgroundTransparency = 1.000
-TextButton_2.Size = UDim2.new(0, 75, 0, 14)
-TextButton_2.Font = Enum.Font.Cartoon
-TextButton_2.Text = "hats"
-TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.TextScaled = true
-TextButton_2.TextSize = 14.000
-TextButton_2.TextWrapped = true
-TextButton_2.TextYAlignment = Enum.TextYAlignment.Bottom
-
-Utility.Name = "Utility"
-Utility.Parent = Sections
-Utility.AnchorPoint = Vector2.new(0.5, 0.5)
-Utility.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-Utility.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Utility.Position = UDim2.new(0.625, 0, 0.439622313, 0)
-Utility.Size = UDim2.new(0, 75, 0, 14)
-Utility.ZIndex = 0
-
-TextButton_3.Parent = Utility
-TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.BackgroundTransparency = 1.000
-TextButton_3.Position = UDim2.new(0, 0, 7.4505806e-09, 0)
-TextButton_3.Size = UDim2.new(0, 75, 0, 14)
-TextButton_3.Font = Enum.Font.Cartoon
-TextButton_3.Text = "utility"
-TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_3.TextScaled = true
-TextButton_3.TextSize = 14.000
-TextButton_3.TextWrapped = true
-TextButton_3.TextYAlignment = Enum.TextYAlignment.Bottom
-
-SettingsCredits.Name = "Settings/Credits"
-SettingsCredits.Parent = Sections
-SettingsCredits.AnchorPoint = Vector2.new(0.5, 0.5)
-SettingsCredits.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-SettingsCredits.BorderColor3 = Color3.fromRGB(255, 255, 255)
-SettingsCredits.Position = UDim2.new(0.875, 0, 0.439622313, 0)
-SettingsCredits.Size = UDim2.new(0, 75, 0, 14)
-SettingsCredits.ZIndex = 0
-
-TextButton_4.Parent = SettingsCredits
-TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_4.BackgroundTransparency = 1.000
-TextButton_4.Size = UDim2.new(0, 75, 0, 14)
-TextButton_4.Font = Enum.Font.Cartoon
-TextButton_4.Text = "settings/credits"
-TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_4.TextScaled = true
-TextButton_4.TextSize = 14.000
-TextButton_4.TextWrapped = true
-TextButton_4.TextYAlignment = Enum.TextYAlignment.Bottom
-
-Status.Name = "Status"
-Status.Parent = Main
-Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Status.BackgroundTransparency = 1.000
-Status.Position = UDim2.new(0, 0, 0.185567006, 0)
-Status.Size = UDim2.new(0, 300, 0, 158)
-
-TextLabel.Parent = Status
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0, 0, 0.898734152, 0)
-TextLabel.Size = UDim2.new(0, 300, 0, 16)
-TextLabel.Font = Enum.Font.Cartoon
-TextLabel.Text = "nil"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
-Scripts.Name = "Scripts"
-Scripts.Parent = Main
-
-ExploitScripts.Name = "ExploitScripts"
-ExploitScripts.Parent = Main
-
-Animations_2.Name = "Animations"
-Animations_2.Parent = ExploitScripts
-Animations_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Animations_2.BackgroundTransparency = 1.000
-Animations_2.Position = UDim2.new(0, 0, 0.185567006, 0)
-Animations_2.Size = UDim2.new(0, 300, 0, 158)
-Animations_2.Visible = false
-
-Neko.Name = "Neko"
-Neko.Parent = Animations_2
-Neko.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-Neko.BackgroundTransparency = 1.000
-Neko.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Neko.BorderSizePixel = 0
-Neko.Position = UDim2.new(0.0199999996, 0, 0.131266743, 0)
-Neko.Size = UDim2.new(0, 88, 0, 20)
-Neko.ZIndex = 3
-Neko.Font = Enum.Font.Cartoon
-Neko.Text = "neko"
-Neko.TextColor3 = Color3.fromRGB(255, 255, 255)
-Neko.TextSize = 14.000
-
-TextButton_Roundify_8px.Name = "TextButton_Roundify_8px"
-TextButton_Roundify_8px.Parent = Neko
-TextButton_Roundify_8px.Active = true
-TextButton_Roundify_8px.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_8px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_8px.BackgroundTransparency = 1.000
-TextButton_Roundify_8px.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_8px.Selectable = true
-TextButton_Roundify_8px.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_8px.Image = "rbxassetid://3570695787"
-TextButton_Roundify_8px.ImageColor3 = Color3.fromRGB(99, 99, 99)
-TextButton_Roundify_8px.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_8px.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_8px.SliceScale = 0.667
-
-Chill.Name = "Chill"
-Chill.Parent = Animations_2
-Chill.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-Chill.BackgroundTransparency = 1.000
-Chill.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Chill.BorderSizePixel = 0
-Chill.Position = UDim2.new(0.0199999996, 0, 0.322249323, 0)
-Chill.Size = UDim2.new(0, 88, 0, 20)
-Chill.ZIndex = 3
-Chill.Font = Enum.Font.Cartoon
-Chill.Text = "chill"
-Chill.TextColor3 = Color3.fromRGB(255, 255, 255)
-Chill.TextSize = 14.000
-
-TextButton_Roundify_8px_2.Name = "TextButton_Roundify_8px"
-TextButton_Roundify_8px_2.Parent = Chill
-TextButton_Roundify_8px_2.Active = true
-TextButton_Roundify_8px_2.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_8px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_8px_2.BackgroundTransparency = 1.000
-TextButton_Roundify_8px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_8px_2.Selectable = true
-TextButton_Roundify_8px_2.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_8px_2.Image = "rbxassetid://3570695787"
-TextButton_Roundify_8px_2.ImageColor3 = Color3.fromRGB(99, 99, 99)
-TextButton_Roundify_8px_2.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_8px_2.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_8px_2.SliceScale = 0.667
-
-Nameless.Name = "Nameless"
-Nameless.Parent = Animations_2
-Nameless.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-Nameless.BackgroundTransparency = 1.000
-Nameless.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Nameless.BorderSizePixel = 0
-Nameless.Position = UDim2.new(0.0199999809, 0, 0.505793691, 0)
-Nameless.Size = UDim2.new(0, 88, 0, 20)
-Nameless.ZIndex = 3
-Nameless.Font = Enum.Font.Cartoon
-Nameless.Text = "nameless animations v4"
-Nameless.TextColor3 = Color3.fromRGB(255, 255, 255)
-Nameless.TextScaled = true
-Nameless.TextSize = 14.000
-Nameless.TextWrapped = true
-
-NetlessNotNeeded.Name = "NetlessNotNeeded"
-NetlessNotNeeded.Parent = Nameless
-NetlessNotNeeded.Active = true
-NetlessNotNeeded.AnchorPoint = Vector2.new(0.5, 0.5)
-NetlessNotNeeded.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded.BackgroundTransparency = 1.000
-NetlessNotNeeded.Position = UDim2.new(0.5, 0, 0.5, 0)
-NetlessNotNeeded.Selectable = true
-NetlessNotNeeded.Size = UDim2.new(1, 0, 1, 0)
-NetlessNotNeeded.Image = "rbxassetid://3570695787"
-NetlessNotNeeded.ImageColor3 = Color3.fromRGB(99, 99, 99)
-NetlessNotNeeded.ScaleType = Enum.ScaleType.Slice
-NetlessNotNeeded.SliceCenter = Rect.new(100, 100, 100, 100)
-NetlessNotNeeded.SliceScale = 0.667
-
-UIGridLayout.Parent = Animations_2
-UIGridLayout.FillDirection = Enum.FillDirection.Vertical
-UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-UIGridLayout.CellSize = UDim2.new(0, 70, 0, 20)
-UIGridLayout.FillDirectionMaxCells = 6
-
-Helicopter.Name = "Helicopter"
-Helicopter.Parent = Animations_2
-Helicopter.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-Helicopter.BackgroundTransparency = 1.000
-Helicopter.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Helicopter.BorderSizePixel = 0
-Helicopter.Position = UDim2.new(0.0199999809, 0, 0.505793691, 0)
-Helicopter.Size = UDim2.new(0, 88, 0, 20)
-Helicopter.ZIndex = 3
-Helicopter.Font = Enum.Font.Cartoon
-Helicopter.Text = "helicopter"
-Helicopter.TextColor3 = Color3.fromRGB(255, 255, 255)
-Helicopter.TextSize = 14.000
-Helicopter.TextWrapped = true
-
-NetlessNotNeeded_2.Name = "NetlessNotNeeded"
-NetlessNotNeeded_2.Parent = Helicopter
-NetlessNotNeeded_2.Active = true
-NetlessNotNeeded_2.AnchorPoint = Vector2.new(0.5, 0.5)
-NetlessNotNeeded_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_2.BackgroundTransparency = 1.000
-NetlessNotNeeded_2.Position = UDim2.new(0.5, 0, 0.5, 0)
-NetlessNotNeeded_2.Selectable = true
-NetlessNotNeeded_2.Size = UDim2.new(1, 0, 1, 0)
-NetlessNotNeeded_2.Image = "rbxassetid://3570695787"
-NetlessNotNeeded_2.ImageColor3 = Color3.fromRGB(99, 99, 99)
-NetlessNotNeeded_2.ScaleType = Enum.ScaleType.Slice
-NetlessNotNeeded_2.SliceCenter = Rect.new(100, 100, 100, 100)
-NetlessNotNeeded_2.SliceScale = 0.667
-
-Hats_2.Name = "Hats"
-Hats_2.Parent = ExploitScripts
-Hats_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Hats_2.BackgroundTransparency = 1.000
-Hats_2.Position = UDim2.new(0, 0, 0.185567006, 0)
-Hats_2.Size = UDim2.new(0, 300, 0, 158)
-Hats_2.Visible = false
-
-Hathub.Name = "Hathub"
-Hathub.Parent = Hats_2
-Hathub.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-Hathub.BackgroundTransparency = 1.000
-Hathub.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Hathub.BorderSizePixel = 0
-Hathub.Position = UDim2.new(0.0199999996, 0, 0.131266713, 0)
-Hathub.Size = UDim2.new(0, 88, 0, 20)
-Hathub.ZIndex = 3
-Hathub.Font = Enum.Font.Cartoon
-Hathub.Text = "hathub v1"
-Hathub.TextColor3 = Color3.fromRGB(255, 255, 255)
-Hathub.TextSize = 14.000
-
-NetlessNotNeeded_3.Name = "NetlessNotNeeded"
-NetlessNotNeeded_3.Parent = Hathub
-NetlessNotNeeded_3.Active = true
-NetlessNotNeeded_3.AnchorPoint = Vector2.new(0.5, 0.5)
-NetlessNotNeeded_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_3.BackgroundTransparency = 1.000
-NetlessNotNeeded_3.Position = UDim2.new(0.5, 0, 0.5, 0)
-NetlessNotNeeded_3.Selectable = true
-NetlessNotNeeded_3.Size = UDim2.new(1, 0, 1, 0)
-NetlessNotNeeded_3.Image = "rbxassetid://3570695787"
-NetlessNotNeeded_3.ImageColor3 = Color3.fromRGB(99, 99, 99)
-NetlessNotNeeded_3.ScaleType = Enum.ScaleType.Slice
-NetlessNotNeeded_3.SliceCenter = Rect.new(100, 100, 100, 100)
-NetlessNotNeeded_3.SliceScale = 0.667
-
-UIGridLayout_2.Parent = Hats_2
-UIGridLayout_2.FillDirection = Enum.FillDirection.Vertical
-UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-UIGridLayout_2.CellSize = UDim2.new(0, 70, 0, 20)
-UIGridLayout_2.FillDirectionMaxCells = 6
-
-Car.Name = "Car"
-Car.Parent = Hats_2
-Car.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-Car.BackgroundTransparency = 1.000
-Car.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Car.BorderSizePixel = 0
-Car.Position = UDim2.new(0.0199999996, 0, 0.131266713, 0)
-Car.Size = UDim2.new(0, 88, 0, 20)
-Car.ZIndex = 3
-Car.Font = Enum.Font.Cartoon
-Car.Text = "car"
-Car.TextColor3 = Color3.fromRGB(255, 255, 255)
-Car.TextSize = 14.000
-
-NetlessNotNeeded_4.Name = "NetlessNotNeeded"
-NetlessNotNeeded_4.Parent = Car
-NetlessNotNeeded_4.Active = true
-NetlessNotNeeded_4.AnchorPoint = Vector2.new(0.5, 0.5)
-NetlessNotNeeded_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_4.BackgroundTransparency = 1.000
-NetlessNotNeeded_4.Position = UDim2.new(0.5, 0, 0.5, 0)
-NetlessNotNeeded_4.Selectable = true
-NetlessNotNeeded_4.Size = UDim2.new(1, 0, 1, 0)
-NetlessNotNeeded_4.Image = "rbxassetid://3570695787"
-NetlessNotNeeded_4.ImageColor3 = Color3.fromRGB(99, 99, 99)
-NetlessNotNeeded_4.ScaleType = Enum.ScaleType.Slice
-NetlessNotNeeded_4.SliceCenter = Rect.new(100, 100, 100, 100)
-NetlessNotNeeded_4.SliceScale = 0.667
+Frames.Name = "Frames"
+Frames.Parent = Sections
 
 Utility_2.Name = "Utility"
-Utility_2.Parent = ExploitScripts
+Utility_2.Parent = Frames
 Utility_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Utility_2.BackgroundTransparency = 1.000
-Utility_2.Position = UDim2.new(0, 0, 0.185567006, 0)
-Utility_2.Size = UDim2.new(0, 300, 0, 158)
+Utility_2.Position = UDim2.new(0.109999999, 0, 0.104099385, 0)
+Utility_2.Size = UDim2.new(0, 267, 0, 155)
+Utility_2.Visible = false
 
 SimpleSpy.Name = "SimpleSpy"
 SimpleSpy.Parent = Utility_2
-SimpleSpy.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-SimpleSpy.BackgroundTransparency = 1.000
-SimpleSpy.BorderColor3 = Color3.fromRGB(255, 255, 255)
+SimpleSpy.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
 SimpleSpy.BorderSizePixel = 0
-SimpleSpy.Position = UDim2.new(0.0199999996, 0, 0.129765987, 0)
-SimpleSpy.Size = UDim2.new(0, 88, 0, 20)
-SimpleSpy.ZIndex = 3
-SimpleSpy.Font = Enum.Font.Cartoon
+SimpleSpy.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+SimpleSpy.Size = UDim2.new(0, 50, 0, 16)
+SimpleSpy.Font = Enum.Font.SourceSansBold
 SimpleSpy.Text = "simple spy"
 SimpleSpy.TextColor3 = Color3.fromRGB(255, 255, 255)
-SimpleSpy.TextSize = 14.000
+SimpleSpy.TextSize = 11.000
+SimpleSpy.TextWrapped = true
 
-TextButton_Roundify_8px_3.Name = "TextButton_Roundify_8px"
-TextButton_Roundify_8px_3.Parent = SimpleSpy
-TextButton_Roundify_8px_3.Active = true
-TextButton_Roundify_8px_3.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_8px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_8px_3.BackgroundTransparency = 1.000
-TextButton_Roundify_8px_3.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_8px_3.Selectable = true
-TextButton_Roundify_8px_3.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_8px_3.Image = "rbxassetid://3570695787"
-TextButton_Roundify_8px_3.ImageColor3 = Color3.fromRGB(99, 99, 99)
-TextButton_Roundify_8px_3.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_8px_3.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_8px_3.SliceScale = 0.667
-
-MouseFling.Name = "MouseFling"
-MouseFling.Parent = Utility_2
-MouseFling.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-MouseFling.BackgroundTransparency = 1.000
-MouseFling.BorderColor3 = Color3.fromRGB(255, 255, 255)
-MouseFling.BorderSizePixel = 0
-MouseFling.Position = UDim2.new(0.0199999996, 0, 0.316964269, 0)
-MouseFling.Size = UDim2.new(0, 88, 0, 20)
-MouseFling.ZIndex = 3
-MouseFling.Font = Enum.Font.Cartoon
-MouseFling.Text = "mouse fling"
-MouseFling.TextColor3 = Color3.fromRGB(255, 255, 255)
-MouseFling.TextSize = 14.000
-
-TextButton_Roundify_8px_4.Name = "TextButton_Roundify_8px"
-TextButton_Roundify_8px_4.Parent = MouseFling
-TextButton_Roundify_8px_4.Active = true
-TextButton_Roundify_8px_4.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_8px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_8px_4.BackgroundTransparency = 1.000
-TextButton_Roundify_8px_4.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_8px_4.Selectable = true
-TextButton_Roundify_8px_4.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_8px_4.Image = "rbxassetid://3570695787"
-TextButton_Roundify_8px_4.ImageColor3 = Color3.fromRGB(99, 99, 99)
-TextButton_Roundify_8px_4.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_8px_4.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_8px_4.SliceScale = 0.667
-
-InfiniteYield.Name = "InfiniteYield"
-InfiniteYield.Parent = Utility_2
-InfiniteYield.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-InfiniteYield.BackgroundTransparency = 1.000
-InfiniteYield.BorderColor3 = Color3.fromRGB(255, 255, 255)
-InfiniteYield.BorderSizePixel = 0
-InfiniteYield.Position = UDim2.new(0.0199999996, 0, 0.515841961, 0)
-InfiniteYield.Size = UDim2.new(0, 88, 0, 20)
-InfiniteYield.ZIndex = 3
-InfiniteYield.Font = Enum.Font.Cartoon
-InfiniteYield.Text = "infinite yield"
-InfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
-InfiniteYield.TextSize = 12.000
-InfiniteYield.TextWrapped = true
-
-TextButton_Roundify_8px_5.Name = "TextButton_Roundify_8px"
-TextButton_Roundify_8px_5.Parent = InfiniteYield
-TextButton_Roundify_8px_5.Active = true
-TextButton_Roundify_8px_5.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_8px_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_8px_5.BackgroundTransparency = 1.000
-TextButton_Roundify_8px_5.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_8px_5.Selectable = true
-TextButton_Roundify_8px_5.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_8px_5.Image = "rbxassetid://3570695787"
-TextButton_Roundify_8px_5.ImageColor3 = Color3.fromRGB(99, 99, 99)
-TextButton_Roundify_8px_5.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_8px_5.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_8px_5.SliceScale = 0.667
+UIGridLayout.Parent = Utility_2
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIGridLayout.CellSize = UDim2.new(0, 50, 0, 25)
+UIGridLayout.StartCorner = Enum.StartCorner.BottomRight
 
 CMDX.Name = "CMD-X"
 CMDX.Parent = Utility_2
-CMDX.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-CMDX.BackgroundTransparency = 1.000
-CMDX.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CMDX.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
 CMDX.BorderSizePixel = 0
-CMDX.Position = UDim2.new(0.0199999996, 0, 0.712044418, 0)
-CMDX.Size = UDim2.new(0, 88, 0, 20)
-CMDX.ZIndex = 3
-CMDX.Font = Enum.Font.Cartoon
-CMDX.Text = "cmd-x"
+CMDX.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+CMDX.Size = UDim2.new(0, 50, 0, 16)
+CMDX.Font = Enum.Font.SourceSansBold
+CMDX.Text = "CMD-X"
 CMDX.TextColor3 = Color3.fromRGB(255, 255, 255)
-CMDX.TextSize = 14.000
+CMDX.TextSize = 11.000
 
-TextButton_Roundify_8px_6.Name = "TextButton_Roundify_8px"
-TextButton_Roundify_8px_6.Parent = CMDX
-TextButton_Roundify_8px_6.Active = true
-TextButton_Roundify_8px_6.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_8px_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_8px_6.BackgroundTransparency = 1.000
-TextButton_Roundify_8px_6.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_8px_6.Selectable = true
-TextButton_Roundify_8px_6.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_8px_6.Image = "rbxassetid://3570695787"
-TextButton_Roundify_8px_6.ImageColor3 = Color3.fromRGB(99, 99, 99)
-TextButton_Roundify_8px_6.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_8px_6.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_8px_6.SliceScale = 0.667
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = Utility_2
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+InfiniteYield.BorderSizePixel = 0
+InfiniteYield.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+InfiniteYield.Size = UDim2.new(0, 50, 0, 16)
+InfiniteYield.Font = Enum.Font.SourceSansBold
+InfiniteYield.Text = "infinite yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.TextSize = 11.000
+InfiniteYield.TextWrapped = true
 
-UIGridLayout_3.Parent = Utility_2
-UIGridLayout_3.FillDirection = Enum.FillDirection.Vertical
+MouseFling.Name = "MouseFling"
+MouseFling.Parent = Utility_2
+MouseFling.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+MouseFling.BorderSizePixel = 0
+MouseFling.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+MouseFling.Size = UDim2.new(0, 50, 0, 16)
+MouseFling.Font = Enum.Font.SourceSansBold
+MouseFling.Text = "mouse fling"
+MouseFling.TextColor3 = Color3.fromRGB(255, 255, 255)
+MouseFling.TextSize = 11.000
+MouseFling.TextWrapped = true
+
+Home.Name = "Home"
+Home.Parent = Frames
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.Position = UDim2.new(0.109999999, 0, 0.104099385, 0)
+Home.Size = UDim2.new(0, 267, 0, 155)
+
+ScriptImage.Name = "ScriptImage"
+ScriptImage.Parent = Home
+ScriptImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptImage.BackgroundTransparency = 1.000
+ScriptImage.Position = UDim2.new(0.464644194, 0, 0.863121331, 0)
+ScriptImage.Size = UDim2.new(0, 15, 0, 15)
+ScriptImage.Image = "http://www.roblox.com/asset/?id=46342657"
+
+Info.Name = "Info"
+Info.Parent = Home
+Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info.BackgroundTransparency = 1.000
+Info.Position = UDim2.new(0.0605243593, 0, 0.459933966, 0)
+Info.Size = UDim2.new(0, 232, 0, 42)
+Info.Font = Enum.Font.SourceSansBold
+Info.Text = "here you will find all kinds of scripts for your exploiting needs. enjoy your stay!"
+Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info.TextSize = 14.000
+Info.TextWrapped = true
+
+Welcome.Name = "Welcome"
+Welcome.Parent = Home
+Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.BackgroundTransparency = 1.000
+Welcome.Position = UDim2.new(0, 0, 0.288571388, 0)
+Welcome.Size = UDim2.new(0, 267, 0, 23)
+Welcome.Font = Enum.Font.SourceSansBold
+Welcome.Text = "welcome to untitled script hub!"
+Welcome.TextColor3 = Color3.fromRGB(125, 255, 78)
+Welcome.TextScaled = true
+Welcome.TextSize = 14.000
+Welcome.TextWrapped = true
+
+Scripts_2.Name = "Scripts"
+Scripts_2.Parent = Frames
+Scripts_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_2.BackgroundTransparency = 1.000
+Scripts_2.Position = UDim2.new(0.109999999, 0, 0.104099385, 0)
+Scripts_2.Size = UDim2.new(0, 267, 0, 155)
+Scripts_2.Visible = false
+
+UIGridLayout_2.Parent = Scripts_2
+UIGridLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
+UIGridLayout_2.CellSize = UDim2.new(0, 50, 0, 25)
+UIGridLayout_2.StartCorner = Enum.StartCorner.BottomRight
+
+Hathub.Name = "Hathub"
+Hathub.Parent = Scripts_2
+Hathub.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Hathub.BorderSizePixel = 0
+Hathub.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+Hathub.Size = UDim2.new(0, 50, 0, 16)
+Hathub.Font = Enum.Font.SourceSansBold
+Hathub.Text = "hathub"
+Hathub.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hathub.TextSize = 11.000
+Hathub.TextWrapped = true
+
+Car.Name = "Car"
+Car.Parent = Scripts_2
+Car.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Car.BorderSizePixel = 0
+Car.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+Car.Size = UDim2.new(0, 50, 0, 16)
+Car.Font = Enum.Font.SourceSansBold
+Car.Text = "car"
+Car.TextColor3 = Color3.fromRGB(255, 255, 255)
+Car.TextSize = 11.000
+Car.TextWrapped = true
+
+Animations_2.Name = "Animations"
+Animations_2.Parent = Frames
+Animations_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Animations_2.BackgroundTransparency = 1.000
+Animations_2.Position = UDim2.new(0.109999999, 0, 0.104099385, 0)
+Animations_2.Size = UDim2.new(0, 267, 0, 155)
+Animations_2.Visible = false
+
+UIGridLayout_3.Parent = Animations_2
+UIGridLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIGridLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
-UIGridLayout_3.CellSize = UDim2.new(0, 70, 0, 20)
-UIGridLayout_3.FillDirectionMaxCells = 6
+UIGridLayout_3.VerticalAlignment = Enum.VerticalAlignment.Center
+UIGridLayout_3.CellSize = UDim2.new(0, 50, 0, 25)
+UIGridLayout_3.StartCorner = Enum.StartCorner.BottomRight
 
-NullwareV3.Name = "NullwareV3"
-NullwareV3.Parent = Utility_2
-NullwareV3.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-NullwareV3.BackgroundTransparency = 1.000
-NullwareV3.BorderColor3 = Color3.fromRGB(255, 255, 255)
-NullwareV3.BorderSizePixel = 0
-NullwareV3.Position = UDim2.new(0.0199999996, 0, 0.129765987, 0)
-NullwareV3.Size = UDim2.new(0, 88, 0, 20)
-NullwareV3.ZIndex = 3
-NullwareV3.Font = Enum.Font.Cartoon
-NullwareV3.Text = "nullware hub v3"
-NullwareV3.TextColor3 = Color3.fromRGB(255, 255, 255)
-NullwareV3.TextScaled = true
-NullwareV3.TextSize = 14.000
-NullwareV3.TextWrapped = true
+Neko.Name = "Neko"
+Neko.Parent = Animations_2
+Neko.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Neko.BorderSizePixel = 0
+Neko.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+Neko.Size = UDim2.new(0, 50, 0, 16)
+Neko.Font = Enum.Font.SourceSansBold
+Neko.Text = "neko"
+Neko.TextColor3 = Color3.fromRGB(255, 255, 255)
+Neko.TextSize = 11.000
+Neko.TextWrapped = true
 
-TextButton_Roundify_8px_7.Name = "TextButton_Roundify_8px"
-TextButton_Roundify_8px_7.Parent = NullwareV3
-TextButton_Roundify_8px_7.Active = true
-TextButton_Roundify_8px_7.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_8px_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_8px_7.BackgroundTransparency = 1.000
-TextButton_Roundify_8px_7.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_8px_7.Selectable = true
-TextButton_Roundify_8px_7.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_8px_7.Image = "rbxassetid://3570695787"
-TextButton_Roundify_8px_7.ImageColor3 = Color3.fromRGB(99, 99, 99)
-TextButton_Roundify_8px_7.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_8px_7.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_8px_7.SliceScale = 0.667
+Chill.Name = "Chill"
+Chill.Parent = Animations_2
+Chill.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Chill.BorderSizePixel = 0
+Chill.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+Chill.Size = UDim2.new(0, 50, 0, 16)
+Chill.Font = Enum.Font.SourceSansBold
+Chill.Text = "chill"
+Chill.TextColor3 = Color3.fromRGB(255, 255, 255)
+Chill.TextSize = 11.000
+Chill.TextWrapped = true
 
-SyntaxV2.Name = "SyntaxV2"
-SyntaxV2.Parent = Utility_2
-SyntaxV2.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-SyntaxV2.BackgroundTransparency = 1.000
-SyntaxV2.BorderColor3 = Color3.fromRGB(255, 255, 255)
-SyntaxV2.BorderSizePixel = 0
-SyntaxV2.Position = UDim2.new(0.0199999996, 0, 0.129765987, 0)
-SyntaxV2.Size = UDim2.new(0, 88, 0, 20)
-SyntaxV2.ZIndex = 3
-SyntaxV2.Font = Enum.Font.Cartoon
-SyntaxV2.Text = "syntax hub v2"
-SyntaxV2.TextColor3 = Color3.fromRGB(255, 255, 255)
-SyntaxV2.TextScaled = true
-SyntaxV2.TextSize = 14.000
-SyntaxV2.TextWrapped = true
+Nameless.Name = "Nameless"
+Nameless.Parent = Animations_2
+Nameless.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Nameless.BorderSizePixel = 0
+Nameless.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+Nameless.Size = UDim2.new(0, 50, 0, 16)
+Nameless.Font = Enum.Font.SourceSansBold
+Nameless.Text = "nameless animations v4"
+Nameless.TextColor3 = Color3.fromRGB(255, 255, 255)
+Nameless.TextScaled = true
+Nameless.TextSize = 11.000
+Nameless.TextWrapped = true
 
-TextButton_Roundify_8px_8.Name = "TextButton_Roundify_8px"
-TextButton_Roundify_8px_8.Parent = SyntaxV2
-TextButton_Roundify_8px_8.Active = true
-TextButton_Roundify_8px_8.AnchorPoint = Vector2.new(0.5, 0.5)
-TextButton_Roundify_8px_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_Roundify_8px_8.BackgroundTransparency = 1.000
-TextButton_Roundify_8px_8.Position = UDim2.new(0.5, 0, 0.5, 0)
-TextButton_Roundify_8px_8.Selectable = true
-TextButton_Roundify_8px_8.Size = UDim2.new(1, 0, 1, 0)
-TextButton_Roundify_8px_8.Image = "rbxassetid://3570695787"
-TextButton_Roundify_8px_8.ImageColor3 = Color3.fromRGB(99, 99, 99)
-TextButton_Roundify_8px_8.ScaleType = Enum.ScaleType.Slice
-TextButton_Roundify_8px_8.SliceCenter = Rect.new(100, 100, 100, 100)
-TextButton_Roundify_8px_8.SliceScale = 0.667
+Helicopter.Name = "Helicopter"
+Helicopter.Parent = Animations_2
+Helicopter.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Helicopter.BorderSizePixel = 0
+Helicopter.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+Helicopter.Size = UDim2.new(0, 50, 0, 16)
+Helicopter.Font = Enum.Font.SourceSansBold
+Helicopter.Text = "helicopter"
+Helicopter.TextColor3 = Color3.fromRGB(255, 255, 255)
+Helicopter.TextScaled = true
+Helicopter.TextSize = 11.000
+Helicopter.TextWrapped = true
 
-SettingsCredits_2.Name = "Settings/Credits"
-SettingsCredits_2.Parent = ExploitScripts
-SettingsCredits_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SettingsCredits_2.BackgroundTransparency = 1.000
-SettingsCredits_2.Position = UDim2.new(0, 0, 0.185567006, 0)
-SettingsCredits_2.Size = UDim2.new(0, 300, 0, 158)
-SettingsCredits_2.Visible = false
+Settings_2.Name = "Settings"
+Settings_2.Parent = Frames
+Settings_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings_2.BackgroundTransparency = 1.000
+Settings_2.Position = UDim2.new(0.109999999, 0, 0.104099385, 0)
+Settings_2.Size = UDim2.new(0, 267, 0, 155)
+Settings_2.Visible = false
 
-ScriptCredits.Name = "ScriptCredits"
-ScriptCredits.Parent = SettingsCredits_2
-ScriptCredits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ScriptCredits.BackgroundTransparency = 1.000
-ScriptCredits.Position = UDim2.new(0.223333329, 0, 0.177215189, 0)
-ScriptCredits.Size = UDim2.new(0, 165, 0, 18)
-ScriptCredits.Font = Enum.Font.Cartoon
-ScriptCredits.Text = "various people - their scripts"
-ScriptCredits.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScriptCredits.TextScaled = true
-ScriptCredits.TextSize = 14.000
-ScriptCredits.TextWrapped = true
-ScriptCredits.TextXAlignment = Enum.TextXAlignment.Left
-
-HubCredits.Name = "HubCredits"
-HubCredits.Parent = SettingsCredits_2
-HubCredits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-HubCredits.BackgroundTransparency = 1.000
-HubCredits.Position = UDim2.new(0.223333329, 0, 0.291139245, 0)
-HubCredits.Size = UDim2.new(0, 165, 0, 18)
-HubCredits.Font = Enum.Font.Cartoon
-HubCredits.Text = "nebunet - hub creation"
-HubCredits.TextColor3 = Color3.fromRGB(255, 255, 255)
-HubCredits.TextSize = 14.000
-HubCredits.TextWrapped = true
-HubCredits.TextXAlignment = Enum.TextXAlignment.Left
-
-LuaConversionCredits.Name = "LuaConversionCredits"
-LuaConversionCredits.Parent = SettingsCredits_2
-LuaConversionCredits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LuaConversionCredits.BackgroundTransparency = 1.000
-LuaConversionCredits.Position = UDim2.new(0.223333329, 0, 0.405063301, 0)
-LuaConversionCredits.Size = UDim2.new(0, 165, 0, 18)
-LuaConversionCredits.Font = Enum.Font.Cartoon
-LuaConversionCredits.Text = "frstee - for gui to lua"
-LuaConversionCredits.TextColor3 = Color3.fromRGB(255, 255, 255)
-LuaConversionCredits.TextSize = 14.000
-LuaConversionCredits.TextWrapped = true
-LuaConversionCredits.TextXAlignment = Enum.TextXAlignment.Left
-
-CreditsText.Name = "CreditsText"
-CreditsText.Parent = SettingsCredits_2
-CreditsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CreditsText.BackgroundTransparency = 1.000
-CreditsText.Position = UDim2.new(0.223333329, 0, 0.0632911474, 0)
-CreditsText.Size = UDim2.new(0, 165, 0, 18)
-CreditsText.Font = Enum.Font.Cartoon
-CreditsText.Text = "credits"
-CreditsText.TextColor3 = Color3.fromRGB(255, 255, 255)
-CreditsText.TextScaled = true
-CreditsText.TextSize = 14.000
-CreditsText.TextWrapped = true
+Placeholder.Name = "Placeholder"
+Placeholder.Parent = Settings_2
+Placeholder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Placeholder.BackgroundTransparency = 1.000
+Placeholder.Position = UDim2.new(0, 0, 0.398397982, 0)
+Placeholder.Size = UDim2.new(0, 267, 0, 23)
+Placeholder.Font = Enum.Font.SourceSansBold
+Placeholder.Text = "this is a placeholder"
+Placeholder.TextColor3 = Color3.fromRGB(211, 234, 132)
+Placeholder.TextScaled = true
+Placeholder.TextSize = 14.000
+Placeholder.TextWrapped = true
 
 Version.Name = "Version"
-Version.Parent = SettingsCredits_2
+Version.Parent = Settings_2
 Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Version.BackgroundTransparency = 1.000
-Version.Position = UDim2.new(0.456666678, 0, 0.74683547, 0)
-Version.Size = UDim2.new(0, 26, 0, 18)
-Version.Font = Enum.Font.Cartoon
-Version.Text = "v1.01"
-Version.TextColor3 = Color3.fromRGB(255, 255, 255)
-Version.TextSize = 12.000
-Version.TextTransparency = 0.500
+Version.Position = UDim2.new(0, 0, 0.830656052, 0)
+Version.Size = UDim2.new(0, 267, 0, 23)
+Version.Font = Enum.Font.SourceSansBold
+Version.Text = "v1.1"
+Version.TextColor3 = Color3.fromRGB(70, 69, 69)
+Version.TextSize = 14.000
 Version.TextWrapped = true
 
-ThankYou3.Name = "ThankYou<3"
-ThankYou3.Parent = SettingsCredits_2
-ThankYou3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ThankYou3.BackgroundTransparency = 1.000
-ThankYou3.Position = UDim2.new(0.223333329, 0, 0.632911384, 0)
-ThankYou3.Size = UDim2.new(0, 165, 0, 18)
-ThankYou3.Font = Enum.Font.Cartoon
-ThankYou3.Text = "you - for using this script <3"
-ThankYou3.TextColor3 = Color3.fromRGB(255, 255, 255)
-ThankYou3.TextSize = 14.000
-ThankYou3.TextWrapped = true
-ThankYou3.TextXAlignment = Enum.TextXAlignment.Left
+Title_2.Name = "Title"
+Title_2.Parent = Main
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.622172296, 0, 0.0114285713, 0)
+Title_2.Size = UDim2.new(0, 71, 0, 18)
+Title_2.ZIndex = 2
+Title_2.Font = Enum.Font.SourceSansBold
+Title_2.Text = "untitled script hub"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextSize = 14.000
 
-DragCredits.Name = "DragCredits"
-DragCredits.Parent = SettingsCredits_2
-DragCredits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DragCredits.BackgroundTransparency = 1.000
-DragCredits.Position = UDim2.new(0.223333329, 0, 0.518987358, 0)
-DragCredits.Size = UDim2.new(0, 165, 0, 18)
-DragCredits.Font = Enum.Font.Cartoon
-DragCredits.Text = "spynaz - for gui drag module"
-DragCredits.TextColor3 = Color3.fromRGB(255, 255, 255)
-DragCredits.TextSize = 14.000
-DragCredits.TextWrapped = true
-DragCredits.TextXAlignment = Enum.TextXAlignment.Left
+Page.Name = "Page"
+Page.Parent = Main
+Page.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Page.BackgroundTransparency = 1.000
+Page.Position = UDim2.new(0.135505602, 0, 0.0114285713, 0)
+Page.Size = UDim2.new(0, 71, 0, 18)
+Page.ZIndex = 2
+Page.Font = Enum.Font.SourceSansBold
+Page.Text = "page: home"
+Page.TextColor3 = Color3.fromRGB(255, 255, 255)
+Page.TextSize = 14.000
+Page.TextXAlignment = Enum.TextXAlignment.Left
 
 -- Module Scripts:
 
 local fake_module_scripts = {}
 
-do -- Scripts.DraggableObject
-	local script = Instance.new('ModuleScript', Scripts)
+do -- Modules.DraggableObject
+	local script = Instance.new('ModuleScript', Modules)
 	script.Name = "DraggableObject"
 	local function module_script()
 		--[[
@@ -853,34 +628,144 @@ do -- Scripts.DraggableObject
 	end
 	fake_module_scripts[script] = module_script
 end
-do -- Scripts.SectionModule
-	local script = Instance.new('ModuleScript', Scripts)
-	script.Name = "SectionModule"
+do -- Modules_2.DraggableObject
+	local script = Instance.new('ModuleScript', Modules_2)
+	script.Name = "DraggableObject"
 	local function module_script()
-		local sections = {}
+		--[[
+			@Author: Spynaz
+			@Description: Enables dragging on GuiObjects. Supports both mouse and touch.
+			
+			For instructions on how to use this module, go to this link:
+			https://devforum.roblox.com/t/simple-module-for-creating-draggable-gui-elements/230678
+		--]]
 		
-		function sections:ChangeSection(section)
+		local UDim2_new = UDim2.new
+		
+		local UserInputService = game:GetService("UserInputService")
+		
+		local DraggableObject 		= {}
+		DraggableObject.__index 	= DraggableObject
+		
+		-- Sets up a new draggable object
+		function DraggableObject.new(Object)
+			local self 			= {}
+			self.Object			= Object
+			self.DragStarted	= nil
+			self.DragEnded		= nil
+			self.Dragged		= nil
+			self.Dragging		= false
 			
-			_G.CurrentSection = section
-			return section
+			setmetatable(self, DraggableObject)
 			
+			return self
 		end
 		
-		function sections:GetCurrentSection()
+		-- Enables dragging
+		function DraggableObject:Enable()
+			local object			= self.Object
+			local dragInput			= nil
+			local dragStart			= nil
+			local startPos			= nil
+			local preparingToDrag	= false
 			
-			return _G.CurrentSection
+			-- Updates the element
+			local function update(input)
+				local delta 		= input.Position - dragStart
+				local newPosition	= UDim2_new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+				object.Position 	= newPosition
 			
+				return newPosition
+			end
+			
+			self.InputBegan = object.InputBegan:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+					preparingToDrag = true
+					--[[if self.DragStarted then
+						self.DragStarted()
+					end
+					
+					dragging	 	= true
+					dragStart 		= input.Position
+					startPos 		= Element.Position
+					--]]
+					
+					local connection 
+					connection = input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End and (self.Dragging or preparingToDrag) then
+							self.Dragging = false
+							connection:Disconnect()
+							
+							if self.DragEnded and not preparingToDrag then
+								self.DragEnded()
+							end
+							
+							preparingToDrag = false
+						end
+					end)
+				end
+			end)
+			
+			self.InputChanged = object.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+					dragInput = input
+				end
+			end)
+			
+			self.InputChanged2 = UserInputService.InputChanged:Connect(function(input)
+				if object.Parent == nil then
+					self:Disable()
+					return
+				end
+				
+				if preparingToDrag then
+					preparingToDrag = false
+					
+					if self.DragStarted then
+						self.DragStarted()
+					end
+					
+					self.Dragging	= true
+					dragStart 		= input.Position
+					startPos 		= object.Position
+				end
+				
+				if input == dragInput and self.Dragging then
+					local newPosition = update(input)
+					
+					if self.Dragged then
+						self.Dragged(newPosition)
+					end
+				end
+			end)
 		end
 		
-		return sections
+		-- Disables dragging
+		function DraggableObject:Disable()
+			self.InputBegan:Disconnect()
+			self.InputChanged:Disconnect()
+			self.InputChanged2:Disconnect()
+			
+			if self.Dragging then
+				self.Dragging = false
+				
+				if self.DragEnded then
+					self.DragEnded()
+				end
+			end
+		end
+		
+		return DraggableObject
 		
 	end
 	fake_module_scripts[script] = module_script
 end
-do -- Scripts.ScriptLoader
-	local script = Instance.new('ModuleScript', Scripts)
+do -- Modules_2.ScriptLoader
+	local script = Instance.new('ModuleScript', Modules_2)
 	script.Name = "ScriptLoader"
 	local function module_script()
+		_G.netlessapplied = false
+		
 		local scriptLoader = {}
 		
 		local scripts = {
@@ -894,20 +779,16 @@ do -- Scripts.ScriptLoader
 			["InfiniteYield"] = "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",
 			["CMD-X"] = "https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",
 			["Car"] = "https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua",
-			["SyntaxHubV2"] = "https://raw.githubusercontent.com/Memeboiyot/SyntaxRebornOfficial/main/SyntaxReborn",
-			["NullwareV3"] = "https://pastebin.com/raw/dhBdkhgg",
 			["Helicopter"] = "https://pastebin.com/raw/4vTimBLH"
 			
 		}
 		
 		function scriptLoader:LoadScript(script, netlessneeded)
 			
-			getgenv().netlessapplied = nil 
-			
-			if netlessneeded == true and getgenv().netlessapplied == false and script ~= "NullwareV3" then
-				loadstring(game:HttpGet(('https://pastebin.com/raw/Cu7bKQWN'),true))()
-				task.wait(2.5)
-				getgenv().netlessapplied = true
+			if netlessneeded == true and _G.netlessapplied == false then
+				loadstring(game:HttpGet("https://pastebin.com/raw/Cu7bKQWN", true))()
+				task.wait(1)
+				_G.netlessapplied = true
 				loadstring(game:HttpGet(script, true))()
 			else
 				loadstring(game:HttpGet(script, true))()
@@ -935,8 +816,8 @@ end
 
 -- Scripts:
 
-local function STFATRP_fake_script() -- X.Close 
-	local script = Instance.new('LocalScript', X)
+local function ZGGGNCV_fake_script() -- HomeTransition.Home 
+	local script = Instance.new('LocalScript', HomeTransition)
 	local req = require
 	local require = function(obj)
 		local fake = fake_module_scripts[obj]
@@ -946,73 +827,73 @@ local function STFATRP_fake_script() -- X.Close
 		return req(obj)
 	end
 
-	local gui = script.Parent.Parent.Parent.Parent
-	local btn = script.Parent
+	local button = script.Parent
+	local frame = button.Parent
+	local title = frame.Title
+	local ud2 = UDim2.new
+	local ts = game:GetService("TweenService")
 	
-	btn.Activated:Connect(function()
-		gui:Destroy()	
+	local function GUITransparency(obj, seconds, transparency)
+		
+		local properties = {}
+		
+		if obj:IsA("TextButton") then
+			properties.BackgroundTransparency = transparency
+			properties.TextTransparency = transparency
+		elseif obj:IsA("TextLabel") then
+			properties.TextTransparency = transparency
+		elseif obj:IsA("ImageLabel") or obj:IsA("ImageButton") then
+			properties.ImageTransparency = transparency
+		end
+		
+		local ti = TweenInfo.new(seconds)
+		local fade = ts:Create(obj, ti, properties)
+		
+		fade:Play()
+		
+	end
+	
+	button.Activated:Connect(function()
+				
+		frame:TweenSize(ud2(0, 200, 0, 0), "Out", "Sine", .5)
+		GUITransparency(title, .3, 1)
+		GUITransparency(button, .3, 1)
+		GUITransparency(frame.UpdateLogShort, .25, 1)
+		GUITransparency(frame.Update1, .25, 1)
+		GUITransparency(frame.Update2, .25, 1)
+		GUITransparency(frame.More, .25, 1)
+		GUITransparency(frame.UpdateLogMenu, .25, 1)
+		
+		wait(.5)
+		script.Parent = frame.Parent
+		frame:Destroy()
+		wait(.5)
+		
+		local main = script.Parent.Main
+		main.Visible = true
+		
+		task.spawn(function()
+			main.sound:Play()
+			wait(1)
+			main.sound:Destroy()	
+		end)
+		
+		main:TweenSize(ud2(0, 300, 0, 175), "Out", "Sine", .5)
+		main.SideBar:TweenSize(ud2(0, 33, 0, 175), "Out", "Sine", .5)
+		
+		for _, v in pairs(main:GetDescendants()) do
+			
+			if v.Name ~= "Modules" or "SideBar" or v.Parent.Name == "Modules" then		
+				GUITransparency(v, .75, 0)
+			end
+			
+		end
+			
 	end)
 end
-coroutine.wrap(STFATRP_fake_script)()
-local function ECDHO_fake_script() -- Sections.SectionHandler 
-	local script = Instance.new('LocalScript', Sections)
-	local req = require
-	local require = function(obj)
-		local fake = fake_module_scripts[obj]
-		if fake then
-			return fake()
-		end
-		return req(obj)
-	end
-
-	local sectionsFrame = script.Parent
-	
-	local main = script.Parent.Parent
-	local sm = require(main.Scripts.SectionModule)
-	
-	local function Change(x)
-	
-		local statusframe = main.Status
-		local text = statusframe.TextLabel
-		text.Text = ("Current section: "..tostring(x))
-	
-	end
-	
-	local function onButtonActivated(x)
-	
-		local a_change = sm:ChangeSection(tostring(x.Parent.Name))
-		local current = sm:GetCurrentSection()
-		Change(current)
-	
-		for i,v in pairs(main.ExploitScripts:GetChildren()) do
-	
-			if v.name ~= x.Parent.Name then	
-				v.Visible = false
-			else
-				v.Visible = true
-			end
-	
-		end
-	
-	end
-	
-	for _, btn in pairs(sectionsFrame:GetDescendants()) do
-		
-		if btn:IsA("TextButton") then
-			
-			btn.Activated:Connect(function()
-				
-				onButtonActivated(btn)
-				
-			end)
-			
-		end
-		
-	end
-end
-coroutine.wrap(ECDHO_fake_script)()
-local function JCZM_fake_script() -- Scripts.Drag 
-	local script = Instance.new('LocalScript', Scripts)
+coroutine.wrap(ZGGGNCV_fake_script)()
+local function FGAR_fake_script() -- Modules.Drag 
+	local script = Instance.new('LocalScript', Modules)
 	local req = require
 	local require = function(obj)
 		local fake = fake_module_scripts[obj]
@@ -1026,11 +907,10 @@ local function JCZM_fake_script() -- Scripts.Drag
 	local frame_drag = drag_module.new(script.Parent.Parent)
 	
 	frame_drag:Enable()
-	
 end
-coroutine.wrap(JCZM_fake_script)()
-local function SFSN_fake_script() -- Main.ButtonHandler 
-	local script = Instance.new('LocalScript', Main)
+coroutine.wrap(FGAR_fake_script)()
+local function RTXQQLW_fake_script() -- Modules_2.Drag 
+	local script = Instance.new('LocalScript', Modules_2)
 	local req = require
 	local require = function(obj)
 		local fake = fake_module_scripts[obj]
@@ -1040,24 +920,52 @@ local function SFSN_fake_script() -- Main.ButtonHandler
 		return req(obj)
 	end
 
-	local scriptFolder = script.Parent.ExploitScripts
-	local normalScripts = scriptFolder.Parent.Scripts
-	local SL = require(normalScripts.ScriptLoader)
+	local drag_module = require(script.Parent.DraggableObject)
+	local frame_drag = drag_module.new(script.Parent.Parent)
 	
-	for i, v in next, scriptFolder:GetDescendants() do
+	frame_drag:Enable()
+end
+coroutine.wrap(RTXQQLW_fake_script)()
+local function RVABUE_fake_script() -- SideBar.SectionHandler 
+	local script = Instance.new('LocalScript', SideBar)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local sideBar = script.Parent
+	local main = sideBar.Parent
+	local modules = main.Modules
+	local sections = main.Sections
+	local pageText = main.Page
+	
+	for _, v in pairs(sideBar.Stuff:GetChildren()) do
 		
-		if v:IsA("TextButton") then
+		if v.Name ~= script.Name then
 			
 			v.Activated:Connect(function()
 				
-				local executedScript = SL.ReturnNeededScript(v.Name)
+				v.ImageColor3 = Color3.new(1, 1, 1)
 				
-				if executedScript ~= false then
+				for _, frame in pairs(sections.Frames:GetChildren()) do
+					
+					if frame.Name ~= v.Name then
+						frame.Visible = false
+					elseif frame.Name == v.Name then
+						pageText.Text = ("page: "..v.Name:lower())
+						frame.Visible = true
+					end
+					
+				end
 				
-					if v:FindFirstChild("NetlessNotNeeded") or v.Parent.Name == "Utility" then
-						SL:LoadScript(executedScript, false)
-					else
-						SL:LoadScript(executedScript, true)
+				for _, button in pairs(sideBar.Stuff:GetChildren()) do
+					
+					if button.Name ~= v.Name then
+						button.ImageColor3 = Color3.fromRGB(70, 70, 70)
 					end
 					
 				end
@@ -1068,8 +976,68 @@ local function SFSN_fake_script() -- Main.ButtonHandler
 		
 	end
 end
-coroutine.wrap(SFSN_fake_script)()
-local function WWOVLIE_fake_script() -- Main.Startup 
+coroutine.wrap(RVABUE_fake_script)()
+local function JQUFKT_fake_script() -- Close.Close 
+	local script = Instance.new('LocalScript', Close)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local gui = script.Parent.Parent
+	local x = script.Parent
+	
+	x.Activated:Connect(function()
+		gui:Destroy()	
+	end)
+end
+coroutine.wrap(JQUFKT_fake_script)()
+local function OGVTH_fake_script() -- Sections.ScriptHandler 
+	local script = Instance.new('LocalScript', Sections)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local sections = script.Parent
+	local main = sections.Parent
+	local modules = main.Modules
+	local SL = require(modules.ScriptLoader)
+	
+	for _, button in pairs(sections.Frames:GetDescendants()) do
+		
+		if button:IsA("TextButton") or button:IsA("ImageButton") then
+			
+			button.Activated:Connect(function()
+				
+				local executedScript = SL.ReturnNeededScript(button.Name)
+				
+				if executedScript ~= false then
+					
+					if button:FindFirstChild("NetlessNotNeeded") then	
+						SL.LoadScript(executedScript, false)			
+					else
+						SL.LoadScript(executedScript, true)
+					end
+					
+				end
+				
+			end)
+			
+		end
+		
+	end
+end
+coroutine.wrap(OGVTH_fake_script)()
+local function ZXFDQCH_fake_script() -- Main.Hide 
 	local script = Instance.new('LocalScript', Main)
 	local req = require
 	local require = function(obj)
@@ -1080,13 +1048,23 @@ local function WWOVLIE_fake_script() -- Main.Startup
 		return req(obj)
 	end
 
-	local sound = Instance.new("Sound")
-	sound.Parent = script.Parent
-	sound.PlayOnRemove = true
-	sound.SoundId = "rbxassetid://573639200"
-	sound.Volume = .5
+	local main = script.Parent
+	local startup = main.Parent.Opening
+	local sideBar = main.SideBar
 	
-	sound:Destroy()
-	script:Destroy()
+	main.Visible = false
+	startup.Visible = true
+	main.Size = UDim2.new(0, 300, 0, 0)
+	sideBar.Size = UDim2.new(0, 33, 0, 0)
+	
+	for i,v in pairs(main:GetDescendants()) do
+		
+		if v:IsA("TextLabel") then
+			v.TextTransparency = 1
+		elseif v:IsA("ImageLabel") or v:IsA("ImageButton") then
+			v.ImageTransparency = 1
+		end
+		
+	end
 end
-coroutine.wrap(WWOVLIE_fake_script)()
+coroutine.wrap(ZXFDQCH_fake_script)()
