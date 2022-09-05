@@ -56,7 +56,7 @@ local Page = Instance.new("TextLabel")
 --Properties:
 
 untitledscripthubOVERHAUL.Name = "untitled script hub (OVERHAUL)"
-untitledscripthubOVERHAUL.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+untitledscripthubOVERHAUL.Parent = game:GetService("CoreGui")
 
 Opening.Name = "Opening"
 Opening.Parent = untitledscripthubOVERHAUL
