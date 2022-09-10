@@ -1,4 +1,4 @@
-local untitledscripthubOVERHAUL = Instance.new("ScreenGui")
+local untitledscripthub = Instance.new("ScreenGui")
 local Opening = Instance.new("ImageLabel")
 local Title = Instance.new("TextLabel")
 local HomeTransition = Instance.new("TextButton")
@@ -53,6 +53,8 @@ local Nameless = Instance.new("TextButton")
 local NetlessNotNeeded_10 = Instance.new("ImageLabel")
 local Helicopter = Instance.new("TextButton")
 local NetlessNotNeeded_11 = Instance.new("ImageLabel")
+local ClassicAnims = Instance.new("TextButton")
+local NetlessNotNeeded_12 = Instance.new("ImageLabel")
 local Settings_2 = Instance.new("Frame")
 local Placeholder = Instance.new("TextLabel")
 local Version = Instance.new("TextLabel")
@@ -61,11 +63,11 @@ local Page = Instance.new("TextLabel")
 
 --Properties:
 
-untitledscripthubOVERHAUL.Name = "untitled script hub (OVERHAUL)"
-untitledscripthubOVERHAUL.Parent = game:GetService("CoreGui")
+untitledscripthub.Name = "untitled script hub"
+untitledscripthub.Parent = game:GetService("CoreGui")
 
 Opening.Name = "Opening"
-Opening.Parent = untitledscripthubOVERHAUL
+Opening.Parent = untitledscripthub
 Opening.AnchorPoint = Vector2.new(0.5, 0.5)
 Opening.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Opening.BackgroundTransparency = 1.000
@@ -168,7 +170,7 @@ UpdateLogMenu.TextTransparency = 0.500
 UpdateLogMenu.TextWrapped = true
 
 Main.Name = "Main"
-Main.Parent = untitledscripthubOVERHAUL
+Main.Parent = untitledscripthub
 Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.BackgroundTransparency = 1.000
@@ -494,7 +496,6 @@ Animations_2.Visible = false
 
 UIGridLayout_3.Parent = Animations_2
 UIGridLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIGridLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout_3.VerticalAlignment = Enum.VerticalAlignment.Center
 UIGridLayout_3.CellSize = UDim2.new(0, 50, 0, 25)
 
@@ -562,6 +563,25 @@ NetlessNotNeeded_11.Size = UDim2.new(0, 100, 0, 100)
 NetlessNotNeeded_11.Visible = false
 NetlessNotNeeded_11.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
+ClassicAnims.Name = "ClassicAnims"
+ClassicAnims.Parent = Animations_2
+ClassicAnims.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+ClassicAnims.BorderSizePixel = 0
+ClassicAnims.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+ClassicAnims.Size = UDim2.new(0, 50, 0, 16)
+ClassicAnims.Font = Enum.Font.SourceSansBold
+ClassicAnims.Text = "classic"
+ClassicAnims.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClassicAnims.TextSize = 11.000
+ClassicAnims.TextWrapped = true
+
+NetlessNotNeeded_12.Name = "NetlessNotNeeded"
+NetlessNotNeeded_12.Parent = ClassicAnims
+NetlessNotNeeded_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NetlessNotNeeded_12.Size = UDim2.new(0, 100, 0, 100)
+NetlessNotNeeded_12.Visible = false
+NetlessNotNeeded_12.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
 Settings_2.Name = "Settings"
 Settings_2.Parent = Frames
 Settings_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -590,7 +610,7 @@ Version.BackgroundTransparency = 1.000
 Version.Position = UDim2.new(0, 0, 0.830656052, 0)
 Version.Size = UDim2.new(0, 267, 0, 23)
 Version.Font = Enum.Font.SourceSansBold
-Version.Text = "v1.11"
+Version.Text = "v1.12"
 Version.TextColor3 = Color3.fromRGB(70, 69, 69)
 Version.TextSize = 14.000
 Version.TextWrapped = true
@@ -910,7 +930,8 @@ do -- Modules_2.ScriptLoader
 			["Helicopter"] = "https://pastebin.com/raw/4vTimBLH",
 			["R6Anims"] = "https://pastebin.com/raw/YWpCjDXm",
 			["WalkOnWalls"] = "https://pastebin.com/raw/iYG5CTY5",
-			["Flips"] = "https://pastebin.com/raw/JRAAdnkX"
+			["Flips"] = "https://pastebin.com/raw/JRAAdnkX",
+			["ClassicAnims"] = "https://pastebin.com/raw/VNN3AhEY"
 			
 		}
 		
@@ -947,7 +968,7 @@ end
 
 -- Scripts:
 
-local function ORIFEWD_fake_script() -- HomeTransition.Home 
+local function UBVVNV_fake_script() -- HomeTransition.Home 
 	local script = Instance.new('LocalScript', HomeTransition)
 	local req = require
 	local require = function(obj)
@@ -1028,8 +1049,8 @@ local function ORIFEWD_fake_script() -- HomeTransition.Home
 			
 	end)
 end
-coroutine.wrap(ORIFEWD_fake_script)()
-local function RBZSE_fake_script() -- Modules.Drag 
+coroutine.wrap(UBVVNV_fake_script)()
+local function PEWP_fake_script() -- Modules.Drag 
 	local script = Instance.new('LocalScript', Modules)
 	local req = require
 	local require = function(obj)
@@ -1045,8 +1066,8 @@ local function RBZSE_fake_script() -- Modules.Drag
 	
 	frame_drag:Enable()
 end
-coroutine.wrap(RBZSE_fake_script)()
-local function FWCXQC_fake_script() -- Modules_2.Drag 
+coroutine.wrap(PEWP_fake_script)()
+local function QNZPZOP_fake_script() -- Modules_2.Drag 
 	local script = Instance.new('LocalScript', Modules_2)
 	local req = require
 	local require = function(obj)
@@ -1062,8 +1083,8 @@ local function FWCXQC_fake_script() -- Modules_2.Drag
 	
 	frame_drag:Enable()
 end
-coroutine.wrap(FWCXQC_fake_script)()
-local function NZVQA_fake_script() -- SideBar.SectionHandler 
+coroutine.wrap(QNZPZOP_fake_script)()
+local function TTKYTWI_fake_script() -- SideBar.SectionHandler 
 	local script = Instance.new('LocalScript', SideBar)
 	local req = require
 	local require = function(obj)
@@ -1113,8 +1134,8 @@ local function NZVQA_fake_script() -- SideBar.SectionHandler
 		
 	end
 end
-coroutine.wrap(NZVQA_fake_script)()
-local function SDKDVJ_fake_script() -- Close.Close 
+coroutine.wrap(TTKYTWI_fake_script)()
+local function IAXSHV_fake_script() -- Close.Close 
 	local script = Instance.new('LocalScript', Close)
 	local req = require
 	local require = function(obj)
@@ -1132,8 +1153,8 @@ local function SDKDVJ_fake_script() -- Close.Close
 		gui:Destroy()	
 	end)
 end
-coroutine.wrap(SDKDVJ_fake_script)()
-local function ZSXW_fake_script() -- Sections.ScriptHandler 
+coroutine.wrap(IAXSHV_fake_script)()
+local function PJAVW_fake_script() -- Sections.ScriptHandler 
 	local script = Instance.new('LocalScript', Sections)
 	local req = require
 	local require = function(obj)
@@ -1173,8 +1194,8 @@ local function ZSXW_fake_script() -- Sections.ScriptHandler
 		
 	end
 end
-coroutine.wrap(ZSXW_fake_script)()
-local function HRRH_fake_script() -- Main.Hide 
+coroutine.wrap(PJAVW_fake_script)()
+local function UJORU_fake_script() -- Main.Hide 
 	local script = Instance.new('LocalScript', Main)
 	local req = require
 	local require = function(obj)
@@ -1204,4 +1225,4 @@ local function HRRH_fake_script() -- Main.Hide
 		
 	end
 end
-coroutine.wrap(HRRH_fake_script)()
+coroutine.wrap(UJORU_fake_script)()
