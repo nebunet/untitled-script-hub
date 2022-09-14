@@ -21,14 +21,9 @@ local Sections = Instance.new("Folder")
 local Frames = Instance.new("Folder")
 local Utility_2 = Instance.new("Frame")
 local SimpleSpy = Instance.new("TextButton")
-local NetlessNotNeeded = Instance.new("ImageLabel")
 local UIGridLayout = Instance.new("UIGridLayout")
 local CMDX = Instance.new("TextButton")
-local NetlessNotNeeded_2 = Instance.new("ImageLabel")
-local InfiniteYield = Instance.new("TextButton")
-local NetlessNotNeeded_3 = Instance.new("ImageLabel")
-local MouseFling = Instance.new("TextButton")
-local NetlessNotNeeded_4 = Instance.new("ImageLabel")
+local FatesAdmin = Instance.new("TextButton")
 local Home = Instance.new("Frame")
 local ScriptImage = Instance.new("ImageLabel")
 local Info = Instance.new("TextLabel")
@@ -36,25 +31,20 @@ local Welcome = Instance.new("TextLabel")
 local Scripts_2 = Instance.new("Frame")
 local UIGridLayout_2 = Instance.new("UIGridLayout")
 local Hathub = Instance.new("TextButton")
-local NetlessNotNeeded_5 = Instance.new("ImageLabel")
 local Car = Instance.new("TextButton")
-local NetlessNotNeeded_6 = Instance.new("ImageLabel")
 local R6Anims = Instance.new("TextButton")
-local NetlessNotNeeded_7 = Instance.new("ImageLabel")
 local WalkOnWalls = Instance.new("TextButton")
-local NetlessNotNeeded_8 = Instance.new("ImageLabel")
 local Flips = Instance.new("TextButton")
-local NetlessNotNeeded_9 = Instance.new("ImageLabel")
+local MouseFling = Instance.new("TextButton")
+local OPFinality = Instance.new("TextButton")
 local Animations_2 = Instance.new("Frame")
 local UIGridLayout_3 = Instance.new("UIGridLayout")
 local Neko = Instance.new("TextButton")
 local Chill = Instance.new("TextButton")
 local Nameless = Instance.new("TextButton")
-local NetlessNotNeeded_10 = Instance.new("ImageLabel")
 local Helicopter = Instance.new("TextButton")
-local NetlessNotNeeded_11 = Instance.new("ImageLabel")
-local ClassicAnims = Instance.new("TextButton")
-local NetlessNotNeeded_12 = Instance.new("ImageLabel")
+local Classic = Instance.new("TextButton")
+local Reanimator = Instance.new("TextButton")
 local Settings_2 = Instance.new("Frame")
 local Placeholder = Instance.new("TextLabel")
 local Version = Instance.new("TextLabel")
@@ -266,16 +256,8 @@ SimpleSpy.TextColor3 = Color3.fromRGB(255, 255, 255)
 SimpleSpy.TextSize = 11.000
 SimpleSpy.TextWrapped = true
 
-NetlessNotNeeded.Name = "NetlessNotNeeded"
-NetlessNotNeeded.Parent = SimpleSpy
-NetlessNotNeeded.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded.Size = UDim2.new(0, 100, 0, 100)
-NetlessNotNeeded.Visible = false
-NetlessNotNeeded.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
 UIGridLayout.Parent = Utility_2
 UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 UIGridLayout.CellSize = UDim2.new(0, 50, 0, 25)
 
@@ -290,50 +272,17 @@ CMDX.Text = "CMD-X"
 CMDX.TextColor3 = Color3.fromRGB(255, 255, 255)
 CMDX.TextSize = 11.000
 
-NetlessNotNeeded_2.Name = "NetlessNotNeeded"
-NetlessNotNeeded_2.Parent = CMDX
-NetlessNotNeeded_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_2.Size = UDim2.new(0, 100, 0, 100)
-NetlessNotNeeded_2.Visible = false
-NetlessNotNeeded_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
-InfiniteYield.Name = "InfiniteYield"
-InfiniteYield.Parent = Utility_2
-InfiniteYield.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-InfiniteYield.BorderSizePixel = 0
-InfiniteYield.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
-InfiniteYield.Size = UDim2.new(0, 50, 0, 16)
-InfiniteYield.Font = Enum.Font.SourceSansBold
-InfiniteYield.Text = "infinite yield"
-InfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
-InfiniteYield.TextSize = 11.000
-InfiniteYield.TextWrapped = true
-
-NetlessNotNeeded_3.Name = "NetlessNotNeeded"
-NetlessNotNeeded_3.Parent = InfiniteYield
-NetlessNotNeeded_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_3.Size = UDim2.new(0, 100, 0, 100)
-NetlessNotNeeded_3.Visible = false
-NetlessNotNeeded_3.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
-MouseFling.Name = "MouseFling"
-MouseFling.Parent = Utility_2
-MouseFling.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-MouseFling.BorderSizePixel = 0
-MouseFling.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
-MouseFling.Size = UDim2.new(0, 50, 0, 16)
-MouseFling.Font = Enum.Font.SourceSansBold
-MouseFling.Text = "mouse fling"
-MouseFling.TextColor3 = Color3.fromRGB(255, 255, 255)
-MouseFling.TextSize = 11.000
-MouseFling.TextWrapped = true
-
-NetlessNotNeeded_4.Name = "NetlessNotNeeded"
-NetlessNotNeeded_4.Parent = MouseFling
-NetlessNotNeeded_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_4.Size = UDim2.new(0, 100, 0, 100)
-NetlessNotNeeded_4.Visible = false
-NetlessNotNeeded_4.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+FatesAdmin.Name = "FatesAdmin"
+FatesAdmin.Parent = Utility_2
+FatesAdmin.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+FatesAdmin.BorderSizePixel = 0
+FatesAdmin.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+FatesAdmin.Size = UDim2.new(0, 50, 0, 16)
+FatesAdmin.Font = Enum.Font.SourceSansBold
+FatesAdmin.Text = "fates admin"
+FatesAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
+FatesAdmin.TextSize = 11.000
+FatesAdmin.TextWrapped = true
 
 Home.Name = "Home"
 Home.Parent = Frames
@@ -385,7 +334,6 @@ Scripts_2.Visible = false
 
 UIGridLayout_2.Parent = Scripts_2
 UIGridLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 UIGridLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
 UIGridLayout_2.CellSize = UDim2.new(0, 50, 0, 25)
 
@@ -401,13 +349,6 @@ Hathub.TextColor3 = Color3.fromRGB(255, 255, 255)
 Hathub.TextSize = 11.000
 Hathub.TextWrapped = true
 
-NetlessNotNeeded_5.Name = "NetlessNotNeeded"
-NetlessNotNeeded_5.Parent = Hathub
-NetlessNotNeeded_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_5.Size = UDim2.new(0, 100, 0, 100)
-NetlessNotNeeded_5.Visible = false
-NetlessNotNeeded_5.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
 Car.Name = "Car"
 Car.Parent = Scripts_2
 Car.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
@@ -419,13 +360,6 @@ Car.Text = "car"
 Car.TextColor3 = Color3.fromRGB(255, 255, 255)
 Car.TextSize = 11.000
 Car.TextWrapped = true
-
-NetlessNotNeeded_6.Name = "NetlessNotNeeded"
-NetlessNotNeeded_6.Parent = Car
-NetlessNotNeeded_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_6.Size = UDim2.new(0, 100, 0, 100)
-NetlessNotNeeded_6.Visible = false
-NetlessNotNeeded_6.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 R6Anims.Name = "R6Anims"
 R6Anims.Parent = Scripts_2
@@ -440,13 +374,6 @@ R6Anims.TextScaled = true
 R6Anims.TextSize = 11.000
 R6Anims.TextWrapped = true
 
-NetlessNotNeeded_7.Name = "NetlessNotNeeded"
-NetlessNotNeeded_7.Parent = R6Anims
-NetlessNotNeeded_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_7.Size = UDim2.new(0, 100, 0, 100)
-NetlessNotNeeded_7.Visible = false
-NetlessNotNeeded_7.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
 WalkOnWalls.Name = "WalkOnWalls"
 WalkOnWalls.Parent = Scripts_2
 WalkOnWalls.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
@@ -460,13 +387,6 @@ WalkOnWalls.TextScaled = true
 WalkOnWalls.TextSize = 11.000
 WalkOnWalls.TextWrapped = true
 
-NetlessNotNeeded_8.Name = "NetlessNotNeeded"
-NetlessNotNeeded_8.Parent = WalkOnWalls
-NetlessNotNeeded_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_8.Size = UDim2.new(0, 100, 0, 100)
-NetlessNotNeeded_8.Visible = false
-NetlessNotNeeded_8.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
 Flips.Name = "Flips"
 Flips.Parent = Scripts_2
 Flips.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
@@ -479,12 +399,29 @@ Flips.TextColor3 = Color3.fromRGB(255, 255, 255)
 Flips.TextSize = 11.000
 Flips.TextWrapped = true
 
-NetlessNotNeeded_9.Name = "NetlessNotNeeded"
-NetlessNotNeeded_9.Parent = Flips
-NetlessNotNeeded_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_9.Size = UDim2.new(0, 100, 0, 100)
-NetlessNotNeeded_9.Visible = false
-NetlessNotNeeded_9.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+MouseFling.Name = "MouseFling"
+MouseFling.Parent = Scripts_2
+MouseFling.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+MouseFling.BorderSizePixel = 0
+MouseFling.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+MouseFling.Size = UDim2.new(0, 50, 0, 16)
+MouseFling.Font = Enum.Font.SourceSansBold
+MouseFling.Text = "mouse fling"
+MouseFling.TextColor3 = Color3.fromRGB(255, 255, 255)
+MouseFling.TextSize = 11.000
+MouseFling.TextWrapped = true
+
+OPFinality.Name = "OPFinality"
+OPFinality.Parent = Scripts_2
+OPFinality.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+OPFinality.BorderSizePixel = 0
+OPFinality.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+OPFinality.Size = UDim2.new(0, 50, 0, 16)
+OPFinality.Font = Enum.Font.SourceSansBold
+OPFinality.Text = "OPfinality"
+OPFinality.TextColor3 = Color3.fromRGB(255, 255, 255)
+OPFinality.TextSize = 11.000
+OPFinality.TextWrapped = true
 
 Animations_2.Name = "Animations"
 Animations_2.Parent = Frames
@@ -536,13 +473,6 @@ Nameless.TextScaled = true
 Nameless.TextSize = 11.000
 Nameless.TextWrapped = true
 
-NetlessNotNeeded_10.Name = "NetlessNotNeeded"
-NetlessNotNeeded_10.Parent = Nameless
-NetlessNotNeeded_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_10.Size = UDim2.new(0, 100, 0, 100)
-NetlessNotNeeded_10.Visible = false
-NetlessNotNeeded_10.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
-
 Helicopter.Name = "Helicopter"
 Helicopter.Parent = Animations_2
 Helicopter.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
@@ -556,31 +486,30 @@ Helicopter.TextScaled = true
 Helicopter.TextSize = 11.000
 Helicopter.TextWrapped = true
 
-NetlessNotNeeded_11.Name = "NetlessNotNeeded"
-NetlessNotNeeded_11.Parent = Helicopter
-NetlessNotNeeded_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_11.Size = UDim2.new(0, 100, 0, 100)
-NetlessNotNeeded_11.Visible = false
-NetlessNotNeeded_11.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Classic.Name = "Classic"
+Classic.Parent = Animations_2
+Classic.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Classic.BorderSizePixel = 0
+Classic.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+Classic.Size = UDim2.new(0, 50, 0, 16)
+Classic.Font = Enum.Font.SourceSansBold
+Classic.Text = "classic"
+Classic.TextColor3 = Color3.fromRGB(255, 255, 255)
+Classic.TextSize = 11.000
+Classic.TextWrapped = true
 
-ClassicAnims.Name = "ClassicAnims"
-ClassicAnims.Parent = Animations_2
-ClassicAnims.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-ClassicAnims.BorderSizePixel = 0
-ClassicAnims.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
-ClassicAnims.Size = UDim2.new(0, 50, 0, 16)
-ClassicAnims.Font = Enum.Font.SourceSansBold
-ClassicAnims.Text = "classic"
-ClassicAnims.TextColor3 = Color3.fromRGB(255, 255, 255)
-ClassicAnims.TextSize = 11.000
-ClassicAnims.TextWrapped = true
-
-NetlessNotNeeded_12.Name = "NetlessNotNeeded"
-NetlessNotNeeded_12.Parent = ClassicAnims
-NetlessNotNeeded_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NetlessNotNeeded_12.Size = UDim2.new(0, 100, 0, 100)
-NetlessNotNeeded_12.Visible = false
-NetlessNotNeeded_12.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+Reanimator.Name = "Reanimator"
+Reanimator.Parent = Animations_2
+Reanimator.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Reanimator.BorderSizePixel = 0
+Reanimator.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+Reanimator.Size = UDim2.new(0, 50, 0, 16)
+Reanimator.Font = Enum.Font.SourceSansBold
+Reanimator.Text = "reanimator"
+Reanimator.TextColor3 = Color3.fromRGB(255, 255, 255)
+Reanimator.TextScaled = true
+Reanimator.TextSize = 11.000
+Reanimator.TextWrapped = true
 
 Settings_2.Name = "Settings"
 Settings_2.Parent = Frames
@@ -610,7 +539,7 @@ Version.BackgroundTransparency = 1.000
 Version.Position = UDim2.new(0, 0, 0.830656052, 0)
 Version.Size = UDim2.new(0, 267, 0, 23)
 Version.Font = Enum.Font.SourceSansBold
-Version.Text = "v1.12"
+Version.Text = "v1.13"
 Version.TextColor3 = Color3.fromRGB(70, 69, 69)
 Version.TextSize = 14.000
 Version.TextWrapped = true
@@ -912,7 +841,7 @@ do -- Modules_2.ScriptLoader
 	local script = Instance.new('ModuleScript', Modules_2)
 	script.Name = "ScriptLoader"
 	local function module_script()
-		_G.netlessapplied = false
+		getgenv().netlessapplied = false
 		
 		local scriptLoader = {}
 		
@@ -924,26 +853,28 @@ do -- Modules_2.ScriptLoader
 			["Hathub"] = "https://pastebin.com/raw/1Cjz1RMH",
 			["SimpleSpy"] = "https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua",
 			["MouseFling"] = "https://pastebin.com/raw/c3YA0L26",
-			["InfiniteYield"] = "https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",
+			["FatesAdmin"] = "https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua",
 			["CMD-X"] = "https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",
 			["Car"] = "https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua",
 			["Helicopter"] = "https://pastebin.com/raw/4vTimBLH",
 			["R6Anims"] = "https://pastebin.com/raw/YWpCjDXm",
 			["WalkOnWalls"] = "https://pastebin.com/raw/iYG5CTY5",
 			["Flips"] = "https://pastebin.com/raw/JRAAdnkX",
-			["ClassicAnims"] = "https://pastebin.com/raw/VNN3AhEY"
+			["Classic"] = "https://pastebin.com/raw/nZHXsiHw",
+			["Reanimator"] = "https://pastebin.com/raw/x7vH7VaJ",
+			["OPFinality"] = "https://raw.githubusercontent.com/PhoenixAceVFX/Roblox-Scripts/master/!%20%5BFE%5D%20OPFinality%20Gui%20%5BBEST%5D.lua"
 			
 		}
 		
 		function scriptLoader:LoadScript(script, netlessneeded)
 			
-			if netlessneeded == true and _G.netlessapplied == false then
-				loadstring(game:HttpGet("https://pastebin.com/raw/Cu7bKQWN", true))()
+			if netlessneeded == true and netlessapplied == false then
+				loadstring(game:HttpGet("https://pastebin.com/raw/Cu7bKQWN"))()
 				task.wait(1)
-				_G.netlessapplied = true
-				loadstring(game:HttpGet(script, true))()
+				netlessapplied = true
+				loadstring(game:HttpGet(script))()
 			else
-				loadstring(game:HttpGet(script, true))()
+				loadstring(game:HttpGet(script))()
 			end
 		
 		end
@@ -968,7 +899,7 @@ end
 
 -- Scripts:
 
-local function UBVVNV_fake_script() -- HomeTransition.Home 
+local function HTDTB_fake_script() -- HomeTransition.Home 
 	local script = Instance.new('LocalScript', HomeTransition)
 	local req = require
 	local require = function(obj)
@@ -1038,7 +969,7 @@ local function UBVVNV_fake_script() -- HomeTransition.Home
 		for _, v in pairs(main:GetDescendants()) do
 			
 			if v.Name ~= "Modules" or "SideBar" or v.Parent.Name == "Modules" then		
-				GUITransparency(v, .75, 0)
+				GUITransparency(v, 1.25, 0)
 			end
 			
 		end
@@ -1049,8 +980,8 @@ local function UBVVNV_fake_script() -- HomeTransition.Home
 			
 	end)
 end
-coroutine.wrap(UBVVNV_fake_script)()
-local function PEWP_fake_script() -- Modules.Drag 
+coroutine.wrap(HTDTB_fake_script)()
+local function GCWI_fake_script() -- Modules.Drag 
 	local script = Instance.new('LocalScript', Modules)
 	local req = require
 	local require = function(obj)
@@ -1066,8 +997,8 @@ local function PEWP_fake_script() -- Modules.Drag
 	
 	frame_drag:Enable()
 end
-coroutine.wrap(PEWP_fake_script)()
-local function QNZPZOP_fake_script() -- Modules_2.Drag 
+coroutine.wrap(GCWI_fake_script)()
+local function AYVZBFJ_fake_script() -- Modules_2.Drag 
 	local script = Instance.new('LocalScript', Modules_2)
 	local req = require
 	local require = function(obj)
@@ -1083,8 +1014,8 @@ local function QNZPZOP_fake_script() -- Modules_2.Drag
 	
 	frame_drag:Enable()
 end
-coroutine.wrap(QNZPZOP_fake_script)()
-local function TTKYTWI_fake_script() -- SideBar.SectionHandler 
+coroutine.wrap(AYVZBFJ_fake_script)()
+local function FYSMMQK_fake_script() -- SideBar.SectionHandler 
 	local script = Instance.new('LocalScript', SideBar)
 	local req = require
 	local require = function(obj)
@@ -1134,8 +1065,8 @@ local function TTKYTWI_fake_script() -- SideBar.SectionHandler
 		
 	end
 end
-coroutine.wrap(TTKYTWI_fake_script)()
-local function IAXSHV_fake_script() -- Close.Close 
+coroutine.wrap(FYSMMQK_fake_script)()
+local function PUUORVR_fake_script() -- Close.Close 
 	local script = Instance.new('LocalScript', Close)
 	local req = require
 	local require = function(obj)
@@ -1153,8 +1084,8 @@ local function IAXSHV_fake_script() -- Close.Close
 		gui:Destroy()	
 	end)
 end
-coroutine.wrap(IAXSHV_fake_script)()
-local function PJAVW_fake_script() -- Sections.ScriptHandler 
+coroutine.wrap(PUUORVR_fake_script)()
+local function HJYWTG_fake_script() -- Sections.ScriptHandler 
 	local script = Instance.new('LocalScript', Sections)
 	local req = require
 	local require = function(obj)
@@ -1180,7 +1111,7 @@ local function PJAVW_fake_script() -- Sections.ScriptHandler
 				
 				if executedScript ~= false then
 					
-					if button:FindFirstChild("NetlessNotNeeded") then	
+					if button:FindFirstChildWhichIsA("BoolValue") then	
 						SL:LoadScript(executedScript, false)			
 					else
 						SL:LoadScript(executedScript, true)
@@ -1194,8 +1125,8 @@ local function PJAVW_fake_script() -- Sections.ScriptHandler
 		
 	end
 end
-coroutine.wrap(PJAVW_fake_script)()
-local function UJORU_fake_script() -- Main.Hide 
+coroutine.wrap(HJYWTG_fake_script)()
+local function ANPQ_fake_script() -- Main.Hide 
 	local script = Instance.new('LocalScript', Main)
 	local req = require
 	local require = function(obj)
@@ -1225,4 +1156,4 @@ local function UJORU_fake_script() -- Main.Hide
 		
 	end
 end
-coroutine.wrap(UJORU_fake_script)()
+coroutine.wrap(ANPQ_fake_script)()
