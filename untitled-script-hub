@@ -58,7 +58,7 @@ local Page = Instance.new("TextLabel")
 --Properties:
 
 untitledscripthub.Name = "untitled script hub"
-untitledscripthub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+untitledscripthub.Parent = game:GetService("CoreGui")
 
 Opening.Name = "Opening"
 Opening.Parent = untitledscripthub
