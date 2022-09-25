@@ -16,6 +16,7 @@ local Settings = Instance.new("ImageButton")
 local Animations = Instance.new("ImageButton")
 local Scripts = Instance.new("ImageButton")
 local Utility = Instance.new("ImageButton")
+local Home = Instance.new("ImageButton")
 local Close = Instance.new("ImageButton")
 local Sections = Instance.new("Folder")
 local Frames = Instance.new("Folder")
@@ -24,10 +25,12 @@ local SimpleSpy = Instance.new("TextButton")
 local UIGridLayout = Instance.new("UIGridLayout")
 local CMDX = Instance.new("TextButton")
 local FatesAdmin = Instance.new("TextButton")
-local Home = Instance.new("Frame")
+local Home_2 = Instance.new("Frame")
 local ScriptImage = Instance.new("ImageLabel")
 local Info = Instance.new("TextLabel")
 local Welcome = Instance.new("TextLabel")
+local PlayerImage = Instance.new("ImageLabel")
+local Frame = Instance.new("Frame")
 local Scripts_2 = Instance.new("Frame")
 local UIGridLayout_2 = Instance.new("UIGridLayout")
 local Hathub = Instance.new("TextButton")
@@ -37,6 +40,7 @@ local WalkOnWalls = Instance.new("TextButton")
 local Flips = Instance.new("TextButton")
 local MouseFling = Instance.new("TextButton")
 local OPFinality = Instance.new("TextButton")
+local Dog = Instance.new("TextButton")
 local Animations_2 = Instance.new("Frame")
 local UIGridLayout_3 = Instance.new("UIGridLayout")
 local Neko = Instance.new("TextButton")
@@ -54,7 +58,7 @@ local Page = Instance.new("TextLabel")
 --Properties:
 
 untitledscripthub.Name = "untitled script hub"
-untitledscripthub.Parent = game:GetService("CoreGui")
+untitledscripthub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 Opening.Name = "Opening"
 Opening.Parent = untitledscripthub
@@ -117,7 +121,7 @@ Update1.BackgroundTransparency = 1.000
 Update1.Position = UDim2.new(0, 0, 0.306666672, 0)
 Update1.Size = UDim2.new(0, 200, 0, 18)
 Update1.Font = Enum.Font.SourceSansBold
-Update1.Text = "HUGE revamp"
+Update1.Text = "bug fixes"
 Update1.TextColor3 = Color3.fromRGB(120, 249, 255)
 Update1.TextSize = 14.000
 Update1.TextWrapped = true
@@ -129,7 +133,7 @@ Update2.BackgroundTransparency = 1.000
 Update2.Position = UDim2.new(0, 0, 0.426666677, 0)
 Update2.Size = UDim2.new(0, 200, 0, 18)
 Update2.Font = Enum.Font.SourceSansBold
-Update2.Text = "better gui"
+Update2.Text = "bigger gui"
 Update2.TextColor3 = Color3.fromRGB(120, 249, 255)
 Update2.TextSize = 14.000
 Update2.TextWrapped = true
@@ -153,7 +157,7 @@ UpdateLogMenu.BackgroundTransparency = 1.000
 UpdateLogMenu.Position = UDim2.new(0, 0, 0.666666627, 0)
 UpdateLogMenu.Size = UDim2.new(0, 200, 0, 18)
 UpdateLogMenu.Font = Enum.Font.SourceSansBold
-UpdateLogMenu.Text = "(full update log can be found in main menu)"
+UpdateLogMenu.Text = "(update log in menu coming soon!)"
 UpdateLogMenu.TextColor3 = Color3.fromRGB(120, 249, 255)
 UpdateLogMenu.TextSize = 10.000
 UpdateLogMenu.TextTransparency = 0.500
@@ -165,8 +169,8 @@ Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Main.BackgroundTransparency = 1.000
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.499911606, 0, 0.564285636, 0)
-Main.Size = UDim2.new(0, 300, 0, 175)
+Main.Position = UDim2.new(0.499868482, 0, 0.498972535, 0)
+Main.Size = UDim2.new(0, 345, 0, 238)
 Main.Image = "rbxassetid://3570695787"
 Main.ImageColor3 = Color3.fromRGB(36, 36, 36)
 Main.ScaleType = Enum.ScaleType.Slice
@@ -180,7 +184,7 @@ SideBar.Name = "SideBar"
 SideBar.Parent = Main
 SideBar.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 SideBar.BorderSizePixel = 0
-SideBar.Size = UDim2.new(0, 33, 0, 175)
+SideBar.Size = UDim2.new(0, 33, 0, 238)
 
 Stuff.Name = "Stuff"
 Stuff.Parent = SideBar
@@ -189,7 +193,7 @@ Settings.Name = "Settings"
 Settings.Parent = Stuff
 Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Settings.BackgroundTransparency = 1.000
-Settings.Position = UDim2.new(0, 0, 0.811428547, 0)
+Settings.Position = UDim2.new(0, 0, 0.857647061, 0)
 Settings.Size = UDim2.new(0, 33, 0, 33)
 Settings.Image = "http://www.roblox.com/asset/?id=256294290"
 Settings.ImageColor3 = Color3.fromRGB(70, 70, 70)
@@ -198,7 +202,7 @@ Animations.Name = "Animations"
 Animations.Parent = Stuff
 Animations.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Animations.BackgroundTransparency = 1.000
-Animations.Position = UDim2.new(0, 0, 0.199999988, 0)
+Animations.Position = UDim2.new(0, 0, 0.271974742, 0)
 Animations.Size = UDim2.new(0, 33, 0, 33)
 Animations.Image = "rbxassetid://2151539455"
 Animations.ImageColor3 = Color3.fromRGB(70, 70, 70)
@@ -207,7 +211,7 @@ Scripts.Name = "Scripts"
 Scripts.Parent = Stuff
 Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Scripts.BackgroundTransparency = 1.000
-Scripts.Position = UDim2.new(0, 0, 0.0114285648, 0)
+Scripts.Position = UDim2.new(0, 0, 0.133613452, 0)
 Scripts.Size = UDim2.new(0, 33, 0, 33)
 Scripts.Image = "http://www.roblox.com/asset/?id=4728126418"
 Scripts.ImageColor3 = Color3.fromRGB(70, 70, 70)
@@ -216,10 +220,18 @@ Utility.Name = "Utility"
 Utility.Parent = Stuff
 Utility.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Utility.BackgroundTransparency = 1.000
-Utility.Position = UDim2.new(0, 0, 0.405714273, 0)
+Utility.Position = UDim2.new(0, 0, 0.414873958, 0)
 Utility.Size = UDim2.new(0, 33, 0, 33)
 Utility.Image = "http://www.roblox.com/asset/?id=10829352937"
 Utility.ImageColor3 = Color3.fromRGB(70, 70, 70)
+
+Home.Name = "Home"
+Home.Parent = Stuff
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.Position = UDim2.new(0, 0, -0.00117647741, 0)
+Home.Size = UDim2.new(0, 33, 0, 33)
+Home.Image = "http://www.roblox.com/asset/?id=6034798461"
 
 Close.Name = "Close"
 Close.Parent = Main
@@ -240,8 +252,8 @@ Utility_2.Name = "Utility"
 Utility_2.Parent = Frames
 Utility_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Utility_2.BackgroundTransparency = 1.000
-Utility_2.Position = UDim2.new(0.109999999, 0, 0.104099385, 0)
-Utility_2.Size = UDim2.new(0, 267, 0, 155)
+Utility_2.Position = UDim2.new(0.0956521705, 0, 0.103110947, 0)
+Utility_2.Size = UDim2.new(0, 312, 0, 212)
 Utility_2.Visible = false
 
 SimpleSpy.Name = "SimpleSpy"
@@ -284,27 +296,27 @@ FatesAdmin.TextColor3 = Color3.fromRGB(255, 255, 255)
 FatesAdmin.TextSize = 11.000
 FatesAdmin.TextWrapped = true
 
-Home.Name = "Home"
-Home.Parent = Frames
-Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Home.BackgroundTransparency = 1.000
-Home.Position = UDim2.new(0.109999999, 0, 0.104099385, 0)
-Home.Size = UDim2.new(0, 267, 0, 155)
+Home_2.Name = "Home"
+Home_2.Parent = Frames
+Home_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home_2.BackgroundTransparency = 1.000
+Home_2.Position = UDim2.new(0.0956521705, 0, 0.103110947, 0)
+Home_2.Size = UDim2.new(0, 312, 0, 212)
 
 ScriptImage.Name = "ScriptImage"
-ScriptImage.Parent = Home
+ScriptImage.Parent = Home_2
 ScriptImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScriptImage.BackgroundTransparency = 1.000
-ScriptImage.Position = UDim2.new(0.464644194, 0, 0.863121331, 0)
+ScriptImage.Position = UDim2.new(0.474259585, 0, 0.834819436, 0)
 ScriptImage.Size = UDim2.new(0, 15, 0, 15)
 ScriptImage.Image = "http://www.roblox.com/asset/?id=46342657"
 
 Info.Name = "Info"
-Info.Parent = Home
+Info.Parent = Home_2
 Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Info.BackgroundTransparency = 1.000
-Info.Position = UDim2.new(0.0605243593, 0, 0.459933966, 0)
-Info.Size = UDim2.new(0, 232, 0, 42)
+Info.Position = UDim2.new(0, 0, 0.459934026, 0)
+Info.Size = UDim2.new(0, 311, 0, 42)
 Info.Font = Enum.Font.SourceSansBold
 Info.Text = "here you will find all kinds of scripts for your exploiting needs, all wrapped into one nice package. enjoy your stay!"
 Info.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -312,24 +324,40 @@ Info.TextSize = 14.000
 Info.TextWrapped = true
 
 Welcome.Name = "Welcome"
-Welcome.Parent = Home
+Welcome.Parent = Home_2
 Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Welcome.BackgroundTransparency = 1.000
-Welcome.Position = UDim2.new(0, 0, 0.288571388, 0)
-Welcome.Size = UDim2.new(0, 267, 0, 23)
+Welcome.Position = UDim2.new(0, 0, 0.288571328, 0)
+Welcome.Size = UDim2.new(0, 311, 0, 23)
 Welcome.Font = Enum.Font.SourceSansBold
-Welcome.Text = "welcome to untitled script hub!"
+Welcome.Text = "welcome to untitled script hub, nil!"
 Welcome.TextColor3 = Color3.fromRGB(125, 255, 78)
 Welcome.TextScaled = true
 Welcome.TextSize = 14.000
 Welcome.TextWrapped = true
 
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = Home_2
+PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.BackgroundTransparency = 1.000
+PlayerImage.BorderColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.BorderSizePixel = 3
+PlayerImage.Position = UDim2.new(0.426182657, 0, 0.0376496203, 0)
+PlayerImage.Size = UDim2.new(0, 45, 0, 46)
+PlayerImage.ZIndex = 2
+
+Frame.Parent = Home_2
+Frame.BackgroundColor3 = Color3.fromRGB(235, 235, 235)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.425999999, 0, 0.0379999988, 0)
+Frame.Size = UDim2.new(0, 45, 0, 46)
+
 Scripts_2.Name = "Scripts"
 Scripts_2.Parent = Frames
 Scripts_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Scripts_2.BackgroundTransparency = 1.000
-Scripts_2.Position = UDim2.new(0.109999999, 0, 0.104099385, 0)
-Scripts_2.Size = UDim2.new(0, 267, 0, 155)
+Scripts_2.Position = UDim2.new(0.0956521705, 0, 0.103110947, 0)
+Scripts_2.Size = UDim2.new(0, 312, 0, 212)
 Scripts_2.Visible = false
 
 UIGridLayout_2.Parent = Scripts_2
@@ -423,12 +451,24 @@ OPFinality.TextColor3 = Color3.fromRGB(255, 255, 255)
 OPFinality.TextSize = 11.000
 OPFinality.TextWrapped = true
 
+Dog.Name = "Dog"
+Dog.Parent = Scripts_2
+Dog.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+Dog.BorderSizePixel = 0
+Dog.Position = UDim2.new(0.026217252, 0, 0.104952663, 0)
+Dog.Size = UDim2.new(0, 50, 0, 16)
+Dog.Font = Enum.Font.SourceSansBold
+Dog.Text = "dog"
+Dog.TextColor3 = Color3.fromRGB(255, 255, 255)
+Dog.TextSize = 11.000
+Dog.TextWrapped = true
+
 Animations_2.Name = "Animations"
 Animations_2.Parent = Frames
 Animations_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Animations_2.BackgroundTransparency = 1.000
-Animations_2.Position = UDim2.new(0.109999999, 0, 0.104099385, 0)
-Animations_2.Size = UDim2.new(0, 267, 0, 155)
+Animations_2.Position = UDim2.new(0.0956521705, 0, 0.103110947, 0)
+Animations_2.Size = UDim2.new(0, 312, 0, 212)
 Animations_2.Visible = false
 
 UIGridLayout_3.Parent = Animations_2
@@ -515,16 +555,16 @@ Settings_2.Name = "Settings"
 Settings_2.Parent = Frames
 Settings_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Settings_2.BackgroundTransparency = 1.000
-Settings_2.Position = UDim2.new(0.109999999, 0, 0.104099385, 0)
-Settings_2.Size = UDim2.new(0, 267, 0, 155)
+Settings_2.Position = UDim2.new(0.0956521705, 0, 0.103110947, 0)
+Settings_2.Size = UDim2.new(0, 312, 0, 212)
 Settings_2.Visible = false
 
 Placeholder.Name = "Placeholder"
 Placeholder.Parent = Settings_2
 Placeholder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Placeholder.BackgroundTransparency = 1.000
-Placeholder.Position = UDim2.new(0, 0, 0.398397982, 0)
-Placeholder.Size = UDim2.new(0, 267, 0, 23)
+Placeholder.Position = UDim2.new(0, 0, 0.388964117, 0)
+Placeholder.Size = UDim2.new(0, 312, 0, 23)
 Placeholder.Font = Enum.Font.SourceSansBold
 Placeholder.Text = "this is a placeholder"
 Placeholder.TextColor3 = Color3.fromRGB(211, 234, 132)
@@ -536,10 +576,10 @@ Version.Name = "Version"
 Version.Parent = Settings_2
 Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Version.BackgroundTransparency = 1.000
-Version.Position = UDim2.new(0, 0, 0.830656052, 0)
-Version.Size = UDim2.new(0, 267, 0, 23)
+Version.Position = UDim2.new(0, 0, 0.830656111, 0)
+Version.Size = UDim2.new(0, 312, 0, 23)
 Version.Font = Enum.Font.SourceSansBold
-Version.Text = "v1.13"
+Version.Text = "v1.2"
 Version.TextColor3 = Color3.fromRGB(70, 69, 69)
 Version.TextSize = 14.000
 Version.TextWrapped = true
@@ -548,7 +588,7 @@ Title_2.Name = "Title"
 Title_2.Parent = Main
 Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Title_2.BackgroundTransparency = 1.000
-Title_2.Position = UDim2.new(0.622172296, 0, 0.0114285713, 0)
+Title_2.Position = UDim2.new(0.674346209, 0, 0.0114285713, 0)
 Title_2.Size = UDim2.new(0, 71, 0, 18)
 Title_2.ZIndex = 2
 Title_2.Font = Enum.Font.SourceSansBold
@@ -560,7 +600,7 @@ Page.Name = "Page"
 Page.Parent = Main
 Page.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Page.BackgroundTransparency = 1.000
-Page.Position = UDim2.new(0.135505602, 0, 0.0114285713, 0)
+Page.Position = UDim2.new(0.121012852, 0, 0.0114285713, 0)
 Page.Size = UDim2.new(0, 71, 0, 18)
 Page.ZIndex = 2
 Page.Font = Enum.Font.SourceSansBold
@@ -841,12 +881,13 @@ do -- Modules_2.ScriptLoader
 	local script = Instance.new('ModuleScript', Modules_2)
 	script.Name = "ScriptLoader"
 	local function module_script()
-		getgenv().netlessapplied = false
+		netlessapplied = false
 		
 		local scriptLoader = {}
 		
 		local scripts = {
 			
+			["Netless"] = "https://pastebin.com/raw/Cu7bKQWN",
 			["Neko"] = "https://pastebin.com/raw/p43xFY33",
 			["Chill"] = "https://pastebin.com/raw/XmHFdTij",
 			["Nameless"] = "https://pastebin.com/raw/UW1rpA7Q",
@@ -862,19 +903,52 @@ do -- Modules_2.ScriptLoader
 			["Flips"] = "https://pastebin.com/raw/JRAAdnkX",
 			["Classic"] = "https://pastebin.com/raw/nZHXsiHw",
 			["Reanimator"] = "https://pastebin.com/raw/x7vH7VaJ",
-			["OPFinality"] = "https://raw.githubusercontent.com/PhoenixAceVFX/Roblox-Scripts/master/!%20%5BFE%5D%20OPFinality%20Gui%20%5BBEST%5D.lua"
+			["OPFinality"] = "https://raw.githubusercontent.com/PhoenixAceVFX/Roblox-Scripts/master/!%20%5BFE%5D%20OPFinality%20Gui%20%5BBEST%5D.lua",
+			["Dog"] = "https://pastebin.com/raw/jeMY5t5Y"
 			
 		}
 		
-		function scriptLoader:LoadScript(script, netlessneeded)
+		local noNetless = {
+			"Classic",
+			"Helicopter",
+			"Nameless",
+			"Reanimator",
+			"Car",
+			"Flips",
+			"Hathub",
+			"MouseFling",
+			"OPFinality",
+			"R6Anims",
+			"WalkOnWalls",
+			"Dog",
+			"CMD-X",
+			"FatesAdmin",
+			"SimpleSpy"
+		}
+		
+		function scriptLoader.NetlessNeeded(sn)
+			if table.find(noNetless, sn) then
+				return false
+			else
+				return true
+			end
+		end
+		
+		function scriptLoader:LoadScript(script)
+			
+			local args = string.split(script, " ")	
+			local name = args[1]
+			local content = args[2]
+			
+			local netlessneeded = scriptLoader.NetlessNeeded(name)
 			
 			if netlessneeded == true and netlessapplied == false then
-				loadstring(game:HttpGet("https://pastebin.com/raw/Cu7bKQWN"))()
+				loadstring(game:HttpGet(scripts["Netless"]))()
 				task.wait(1)
 				netlessapplied = true
-				loadstring(game:HttpGet(script))()
+				loadstring(game:HttpGet(content))()
 			else
-				loadstring(game:HttpGet(script))()
+				loadstring(game:HttpGet(content))()
 			end
 		
 		end
@@ -882,7 +956,9 @@ do -- Modules_2.ScriptLoader
 		function scriptLoader.ReturnNeededScript(name)
 			
 			if scripts[name] ~= nil then
-				return scripts[name]
+				local A_1 = name
+				local A_2 = scripts[name]
+				return (A_1.." "..A_2)
 			else
 				warn("Script was not found in table!")
 				return false
@@ -899,7 +975,7 @@ end
 
 -- Scripts:
 
-local function HTDTB_fake_script() -- HomeTransition.Home 
+local function HENSURO_fake_script() -- HomeTransition.Home 
 	local script = Instance.new('LocalScript', HomeTransition)
 	local req = require
 	local require = function(obj)
@@ -963,8 +1039,8 @@ local function HTDTB_fake_script() -- HomeTransition.Home
 			openSound:Destroy()	
 		end)
 		
-		main:TweenSize(ud2(0, 300, 0, 175), "Out", "Sine", .5)
-		main.SideBar:TweenSize(ud2(0, 33, 0, 175), "Out", "Sine", .5)
+		main:TweenSize(ud2(0, 345, 0, 238), "Out", "Sine", .5)
+		main.SideBar:TweenSize(ud2(0, 33, 0, 238), "Out", "Sine", .5)
 		
 		for _, v in pairs(main:GetDescendants()) do
 			
@@ -980,8 +1056,8 @@ local function HTDTB_fake_script() -- HomeTransition.Home
 			
 	end)
 end
-coroutine.wrap(HTDTB_fake_script)()
-local function GCWI_fake_script() -- Modules.Drag 
+coroutine.wrap(HENSURO_fake_script)()
+local function QQCGN_fake_script() -- Modules.Drag 
 	local script = Instance.new('LocalScript', Modules)
 	local req = require
 	local require = function(obj)
@@ -997,8 +1073,8 @@ local function GCWI_fake_script() -- Modules.Drag
 	
 	frame_drag:Enable()
 end
-coroutine.wrap(GCWI_fake_script)()
-local function AYVZBFJ_fake_script() -- Modules_2.Drag 
+coroutine.wrap(QQCGN_fake_script)()
+local function RNXH_fake_script() -- Modules_2.Drag 
 	local script = Instance.new('LocalScript', Modules_2)
 	local req = require
 	local require = function(obj)
@@ -1014,8 +1090,8 @@ local function AYVZBFJ_fake_script() -- Modules_2.Drag
 	
 	frame_drag:Enable()
 end
-coroutine.wrap(AYVZBFJ_fake_script)()
-local function FYSMMQK_fake_script() -- SideBar.SectionHandler 
+coroutine.wrap(RNXH_fake_script)()
+local function DRJN_fake_script() -- SideBar.SectionHandler 
 	local script = Instance.new('LocalScript', SideBar)
 	local req = require
 	local require = function(obj)
@@ -1037,6 +1113,15 @@ local function FYSMMQK_fake_script() -- SideBar.SectionHandler
 		if v.Name ~= script.Name then
 			
 			v.Activated:Connect(function()
+				
+				task.spawn(function()
+					local click = Instance.new("Sound", game:GetService("SoundService"))
+					click.SoundId = "rbxassetid://3623733749"
+					click.Volume = 1.5
+					click:Play()
+					task.wait(.1)
+					click:Destroy()	
+				end)
 				
 				v.ImageColor3 = Color3.new(1, 1, 1)
 				
@@ -1065,8 +1150,8 @@ local function FYSMMQK_fake_script() -- SideBar.SectionHandler
 		
 	end
 end
-coroutine.wrap(FYSMMQK_fake_script)()
-local function PUUORVR_fake_script() -- Close.Close 
+coroutine.wrap(DRJN_fake_script)()
+local function BJKN_fake_script() -- Close.Close 
 	local script = Instance.new('LocalScript', Close)
 	local req = require
 	local require = function(obj)
@@ -1084,8 +1169,8 @@ local function PUUORVR_fake_script() -- Close.Close
 		gui:Destroy()	
 	end)
 end
-coroutine.wrap(PUUORVR_fake_script)()
-local function HJYWTG_fake_script() -- Sections.ScriptHandler 
+coroutine.wrap(BJKN_fake_script)()
+local function FMXG_fake_script() -- Sections.ScriptHandler 
 	local script = Instance.new('LocalScript', Sections)
 	local req = require
 	local require = function(obj)
@@ -1109,14 +1194,8 @@ local function HJYWTG_fake_script() -- Sections.ScriptHandler
 				
 				local executedScript = SL.ReturnNeededScript(button.Name)
 				
-				if executedScript ~= false then
-					
-					if button:FindFirstChildWhichIsA("BoolValue") then	
-						SL:LoadScript(executedScript, false)			
-					else
-						SL:LoadScript(executedScript, true)
-					end
-					
+				if executedScript ~= false then				
+					SL:LoadScript(executedScript)			
 				end
 				
 			end)
@@ -1125,8 +1204,31 @@ local function HJYWTG_fake_script() -- Sections.ScriptHandler
 		
 	end
 end
-coroutine.wrap(HJYWTG_fake_script)()
-local function ANPQ_fake_script() -- Main.Hide 
+coroutine.wrap(FMXG_fake_script)()
+local function GGCKN_fake_script() -- Welcome.PlayerStuff 
+	local script = Instance.new('LocalScript', Welcome)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local plr = game:GetService("Players").LocalPlayer
+	local name = plr.Name
+	
+	local userId = plr.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = game:GetService("Players"):GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	script.Parent.Text = "welcome to untitled script hub, "..name.."!"
+	script.Parent.Parent.PlayerImage.Image = content
+end
+coroutine.wrap(GGCKN_fake_script)()
+local function LPNJQ_fake_script() -- Main.Hide 
 	local script = Instance.new('LocalScript', Main)
 	local req = require
 	local require = function(obj)
@@ -1156,4 +1258,27 @@ local function ANPQ_fake_script() -- Main.Hide
 		
 	end
 end
-coroutine.wrap(ANPQ_fake_script)()
+coroutine.wrap(LPNJQ_fake_script)()
+local function SJTK_fake_script() -- untitledscripthub.AntiClone 
+	local script = Instance.new('LocalScript', untitledscripthub)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local GUI = script.Parent
+	
+	for _, v in pairs(GUI.Parent:GetChildren()) do	
+		if v.Name == GUI.Name and not v:FindFirstChild(script.Name) then
+			print("Found a duplicate of untitled script hub! Destroying...")
+			v:Destroy()
+		end	
+	end
+	
+	script:Destroy()
+end
+coroutine.wrap(SJTK_fake_script)()
