@@ -6,7 +6,7 @@ this is an up and coming script hub that will have a TON of scripts.
 
 anyways, here's a simple tutorial to execute this...
 
-# how to execute
+# how do i execute it?
 
 ...copy and paste the loadstring below in your executor for the magic to happen:
 
@@ -14,4 +14,6 @@ anyways, here's a simple tutorial to execute this...
 loadstring(game:HttpGet('https://raw.githubusercontent.com/nebunet/untitled-script-hub/main/main.lua', true))()
 ```
 
-have fun with the script!
+its that simple!
+
+anyways... have fun with the script!
