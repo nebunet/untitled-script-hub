@@ -1,7 +1,11 @@
 # untitled-script-hub
 
-hey, welcome to the script hub i made!
+this is an up and coming script hub that will have a TON of scripts.
 
-all of the main things can be found in main.lua, just put the raw into a loadstring to start it.
+copy and paste the loadstring below in your executor for the magic to happen:
 
-have fun!
+```
+loadstring(game:HttpGet('https://raw.githubusercontent.com/nebunet/untitled-script-hub/main/main.lua', true))()
+```
+
+have fun with the script!
